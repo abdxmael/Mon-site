@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Héritage Régional - YAHYA Spice Enterprise</title>
+    <meta name="description" content="Découvrez l'héritage agricole du Grand Nord Cameroun, ses traditions millénaires et les méthodes de cultivation ancestrales préservées par YAHYA Entreprise.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fyahyaspic8369back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body class="bg-background font-body">
+    <!-- Navigation Header -->
+    <header class="bg-surface shadow-gentle sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <svg class="w-10 h-10 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                        <path d="M20 2L25 12H35L27 18L30 28L20 22L10 28L13 18L5 12H15L20 2Z"/>
+                        <circle cx="20" cy="30" r="3" fill="currentColor"/>
+                    </svg>
+                    <div>
+                        <h1 class="font-headline text-xl font-bold text-primary">YAHYA</h1>
+                        <p class="text-xs text-text-muted">Spice Enterprise</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-smooth">Accueil</a>
+                    <a href="product_catalog.html" class="text-text-secondary hover:text-primary transition-smooth">Produits</a>
+                    <a href="regional_heritage.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Héritage</a>
+                    <a href="contact.html" class="text-text-secondary hover:text-primary transition-smooth">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden mt-4 hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-3 pb-4">
+                    <a href="homepage.html" class="text-text-secondary">Accueil</a>
+                    <a href="product_catalog.html" class="text-text-secondary">Produits</a>
+                    <a href="regional_heritage.html" class="text-primary font-semibold">Héritage</a>
+                    <a href="contact.html" class="text-text-secondary">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 bg-gradient-warm text-white overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1722900375860-668881d3c85f" 
+                 alt="Paysage traditionnel du Grand Nord Cameroun avec champs d'épices dorés sous le soleil couchant" 
+                 class="w-full h-full object-cover opacity-30"
+                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+        </div>
+        <div class="relative z-10 container mx-auto px-4 text-center">
+            <h1 class="font-headline text-4xl md:text-6xl font-bold mb-6">
+                L'Héritage du<br>
+                <span class="text-accent-300">Grand Nord Cameroun</span>
+            </h1>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto opacity-90">
+                Découvrez les traditions agricoles millénaires qui façonnent nos terres fertiles 
+                et donnent naissance aux épices les plus authentiques d'Afrique.
+            </p>
+        </div>
+    </section>
+
+    <!-- Interactive Map Section -->
+    <section class="py-16 bg-surface">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-headline text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Carte des Régions Agricoles
+                </h2>
+                <p class="text-text-secondary text-lg max-w-2xl mx-auto">
+                    Explorez les différentes zones de cultivation du Grand Nord Cameroun 
+                    et découvrez les spécialités de chaque région.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Map Visualization -->
+                <div class="relative">
+                    <div class="bg-background rounded-2xl p-8 shadow-warm">
+                        <img src="https://images.unsplash.com/photo-1618691057367-c09cc400feea" 
+                             alt="Carte interactive du Grand Nord Cameroun montrant les zones de cultivation d'épices" 
+                             class="w-full h-80 object-contain rounded-lg"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        
+                        <!-- Interactive Points -->
+                        <div class="absolute top-1/3 left-1/4 transform -translate-x-1/2 -translate-y-1/2">
+                            <div class="bg-primary text-white p-2 rounded-full cursor-pointer hover:bg-primary-700 transition-smooth" title="Région de Maroua - Piments">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <div class="absolute top-1/2 right-1/3 transform translate-x-1/2 -translate-y-1/2">
+                            <div class="bg-accent text-text-primary p-2 rounded-full cursor-pointer hover:bg-accent-500 transition-smooth" title="Région de Garoua - Curcuma">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <div class="absolute bottom-1/3 left-1/2 transform -translate-x-1/2 translate-y-1/2">
+                            <div class="bg-secondary text-white p-2 rounded-full cursor-pointer hover:bg-secondary-700 transition-smooth" title="Région de Ngaoundéré - Miel">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Regional Specialties -->
+                <div class="space-y-6">
+                    <div class="card">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-primary text-white p-3 rounded-lg">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-headline text-xl font-semibold text-text-primary mb-2">Région de Maroua</h3>
+                                <p class="text-text-secondary mb-2">Spécialité : Piments rouges séchés</p>
+                                <p class="text-text-muted text-sm">
+                                    Climat sahélien idéal pour le séchage naturel des piments. 
+                                    Tradition de cultivation vieille de plus de 300 ans.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-accent text-text-primary p-3 rounded-lg">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-headline text-xl font-semibold text-text-primary mb-2">Région de Garoua</h3>
+                                <p class="text-text-secondary mb-2">Spécialité : Curcuma biologique</p>
+                                <p class="text-text-muted text-sm">
+                                    Sols riches en minéraux donnant au curcuma sa couleur dorée intense 
+                                    et sa haute teneur en curcumine.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-secondary text-white p-3 rounded-lg">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-headline text-xl font-semibold text-text-primary mb-2">Région de Ngaoundéré</h3>
+                                <p class="text-text-secondary mb-2">Spécialité : Miel traditionnel</p>
+                                <p class="text-text-muted text-sm">
+                                    Savane arborée riche en acacias et karités. 
+                                    Apiculture traditionnelle respectueuse de l'environnement.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seasonal Calendar -->
+    <section class="py-16 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-headline text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Calendrier des Saisons Agricoles
+                </h2>
+                <p class="text-text-secondary text-lg max-w-2xl mx-auto">
+                    Suivez le rythme naturel des saisons et découvrez les périodes 
+                    de cultivation et de récolte de nos produits authentiques.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Saison Sèche -->
+                <div class="card text-center">
+                    <div class="bg-primary-100 p-4 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                        <svg class="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline text-lg font-semibold text-text-primary mb-2">Saison Sèche</h3>
+                    <p class="text-sm text-text-muted mb-3">Novembre - Mars</p>
+                    <p class="text-text-secondary text-sm">
+                        Séchage naturel des piments, récolte du miel, 
+                        préparation des terres pour les semis.
+                    </p>
+                </div>
+
+                <!-- Saison des Pluies -->
+                <div class="card text-center">
+                    <div class="bg-accent-100 p-4 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                        <svg class="w-10 h-10 text-accent-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline text-lg font-semibold text-text-primary mb-2">Saison des Pluies</h3>
+                    <p class="text-sm text-text-muted mb-3">Avril - Octobre</p>
+                    <p class="text-text-secondary text-sm">
+                        Plantation et croissance du curcuma, 
+                        floraison des acacias pour le miel.
+                    </p>
+                </div>
+
+                <!-- Période de Récolte -->
+                <div class="card text-center">
+                    <div class="bg-secondary-100 p-4 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                        <svg class="w-10 h-10 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline text-lg font-semibold text-text-primary mb-2">Période de Récolte</h3>
+                    <p class="text-sm text-text-muted mb-3">Septembre - Novembre</p>
+                    <p class="text-text-secondary text-sm">
+                        Récolte du curcuma à maturité, 
+                        cueillette des piments rouges.
+                    </p>
+                </div>
+
+                <!-- Transformation -->
+                <div class="card text-center">
+                    <div class="bg-success/20 p-4 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                        <svg class="w-10 h-10 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline text-lg font-semibold text-text-primary mb-2">Transformation</h3>
+                    <p class="text-sm text-text-muted mb-3">Décembre - Février</p>
+                    <p class="text-text-secondary text-sm">
+                        Séchage, broyage et conditionnement 
+                        selon les méthodes traditionnelles.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultural Festivals -->
+    <section class="py-16 bg-surface">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-headline text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Festivals et Célébrations Traditionnelles
+                </h2>
+                <p class="text-text-secondary text-lg max-w-2xl mx-auto">
+                    Découvrez les festivités qui rythment la vie agricole du Grand Nord Cameroun 
+                    et célèbrent les récoltes ancestrales.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Festival de la Récolte -->
+                <div class="card">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="https://images.unsplash.com/photo-1596787163220-12ef9ed095f0" 
+                             alt="Festival traditionnel de la récolte au Grand Nord Cameroun avec danses et célébrations communautaires" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Octobre
+                        </div>
+                    </div>
+                    <h3 class="font-headline text-xl font-semibold text-text-primary mb-3">Festival de la Récolte</h3>
+                    <p class="text-text-secondary mb-4">
+                        Célébration communautaire marquant la fin des récoltes de curcuma et de piments. 
+                        Les familles se rassemblent pour partager les premiers fruits de la terre.
+                    </p>
+                    <div class="flex items-center gap-2 text-text-muted text-sm">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                        </svg>
+                        Maroua, Garoua, Ngaoundéré
+                    </div>
+                </div>
+
+                <!-- Fête du Miel -->
+                <div class="card">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="https://images.unsplash.com/photo-1610262251724-1e4ebfb2ecd7" 
+                             alt="Cérémonie traditionnelle de récolte du miel avec apiculteurs locaux en tenue traditionnelle" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div class="absolute top-4 left-4 bg-accent text-text-primary px-3 py-1 rounded-full text-sm font-semibold">
+                            Décembre
+                        </div>
+                    </div>
+                    <h3 class="font-headline text-xl font-semibold text-text-primary mb-3">Fête du Miel</h3>
+                    <p class="text-text-secondary mb-4">
+                        Rituel ancestral de remerciement aux abeilles et à la nature. 
+                        Les apiculteurs partagent leurs connaissances et célèbrent la douceur du miel.
+                    </p>
+                    <div class="flex items-center gap-2 text-text-muted text-sm">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                        </svg>
+                        Région de Ngaoundéré
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Traditional Recipes -->
+    <section class="py-16 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-headline text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Recettes Traditionnelles Ancestrales
+                </h2>
+                <p class="text-text-secondary text-lg max-w-2xl mx-auto">
+                    Redécouvrez les recettes transmises de génération en génération, 
+                    utilisant nos épices authentiques selon les méthodes traditionnelles.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Recette 1 -->
+                <div class="card">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1688084465062-8813e3eebc7d" 
+                             alt="Plat traditionnel camerounais préparé avec des épices YAHYA dans un pot en terre cuite" 
+                             class="w-full h-40 object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    </div>
+                    <h3 class="font-headline text-lg font-semibold text-text-primary mb-2">Sauce Gombo Traditionnelle</h3>
+                    <p class="text-text-muted text-sm mb-3">Recette de Grand-Mère Aïcha</p>
+                    <p class="text-text-secondary text-sm mb-4">
+                        Sauce onctueuse préparée avec nos piments séchés et notre curcuma bio, 
+                        selon la recette familiale vieille de 150 ans.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-primary text-sm font-semibold">Temps : 45 min</span>
+                        <a href="javascript:void(0)" class="text-primary hover:text-primary-700 text-sm font-semibold">
+                            Voir la recette →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Recette 2 -->
+                <div class="card">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1615485499958-69973683793c" 
+                             alt="Mélange d'épices traditionnel du Cameroun avec mortier en bois ancestral" 
+                             class="w-full h-40 object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    </div>
+                    <h3 class="font-headline text-lg font-semibold text-text-primary mb-2">Mélange d'Épices Sahélien</h3>
+                    <p class="text-text-muted text-sm mb-3">Recette du Maître Épicier Moussa</p>
+                    <p class="text-text-secondary text-sm mb-4">
+                        Mélange secret de 7 épices incluant nos piments et curcuma, 
+                        pour sublimer tous vos plats traditionnels.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-primary text-sm font-semibold">Temps : 20 min</span>
+                        <a href="javascript:void(0)" class="text-primary hover:text-primary-700 text-sm font-semibold">
+                            Voir la recette →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Recette 3 -->
+                <div class="card">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1542691032-b7f90743315a" 
+                             alt="Tisane traditionnelle au miel et curcuma servie dans une calebasse artisanale" 
+                             class="w-full h-40 object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    </div>
+                    <h3 class="font-headline text-lg font-semibold text-text-primary mb-2">Tisane Médicinale au Miel</h3>
+                    <p class="text-text-muted text-sm mb-3">Recette de Guérisseuse Hadja</p>
+                    <p class="text-text-secondary text-sm mb-4">
+                        Boisson thérapeutique combinant notre miel pur et curcuma bio, 
+                        utilisée depuis des siècles pour ses vertus curatives.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-primary text-sm font-semibold">Temps : 10 min</span>
+                        <a href="javascript:void(0)" class="text-primary hover:text-primary-700 text-sm font-semibold">
+                            Voir la recette →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historical Context -->
+    <section class="py-16 bg-surface">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-headline text-3xl md:text-4xl font-bold text-text-primary mb-6">
+                        Routes Commerciales Historiques
+                    </h2>
+                    <p class="text-text-secondary text-lg mb-6 leading-relaxed">
+                        Le Grand Nord Cameroun a toujours été un carrefour commercial majeur, 
+                        reliant l'Afrique subsaharienne au Maghreb et au Moyen-Orient. 
+                        Nos épices ont voyagé sur ces routes millénaires.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-primary text-white p-2 rounded-lg mt-1">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-1">Route Trans-Saharienne</h4>
+                                <p class="text-text-muted text-sm">
+                                    Nos piments séchés étaient échangés contre le sel du Sahara, 
+                                    créant un commerce florissant depuis le 12ème siècle.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="bg-accent text-text-primary p-2 rounded-lg mt-1">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-1">Échanges Culturels</h4>
+                                <p class="text-text-muted text-sm">
+                                    Le curcuma et le miel ont enrichi les cuisines arabes et berbères, 
+                                    tandis que de nouvelles techniques nous parvenaient.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="bg-secondary text-white p-2 rounded-lg mt-1">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-1">Héritage Préservé</h4>
+                                <p class="text-text-muted text-sm">
+                                    YAHYA perpétue cette tradition commerciale en connectant 
+                                    nos producteurs locaux au monde entier.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1603787832735-01424a9534dc" 
+                         alt="Caravane traditionnelle traversant le Sahel avec des marchands d'épices historiques" 
+                         class="w-full h-96 object-cover rounded-2xl shadow-warm"
+                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    <div class="absolute -bottom-6 -left-6 bg-accent text-text-primary p-6 rounded-xl shadow-warm">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold">800+</div>
+                            <div class="text-sm">Années d'Histoire</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Essay -->
+    <section class="py-16 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-headline text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Techniques Agricoles Traditionnelles
+                </h2>
+                <p class="text-text-secondary text-lg max-w-2xl mx-auto">
+                    Découvrez en images les méthodes ancestrales de cultivation 
+                    qui garantissent la qualité exceptionnelle de nos produits.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Photo 1 -->
+                <div class="card">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1713112356259-95c8bf1e83c7" 
+                             alt="Agriculteur traditionnel préparant la terre avec des outils ancestraux au lever du soleil" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    </div>
+                    <h3 class="font-headline text-lg font-semibold text-text-primary mb-2">Préparation des Terres</h3>
+                    <p class="text-text-secondary text-sm">
+                        Labourage traditionnel respectant les cycles lunaires 
+                        et la rotation des cultures ancestrales.
+                    </p>
+                </div>
+
+                <!-- Photo 2 -->
+                <div class="card">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1671288780564-67ed13e10649" 
+                             alt="Femme récoltant le curcuma à la main selon les méthodes traditionnelles transmises par ses ancêtres" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    </div>
+                    <h3 class="font-headline text-lg font-semibold text-text-primary mb-2">Récolte Manuelle</h3>
+                    <p class="text-text-secondary text-sm">
+                        Cueillette délicate du curcuma à maturité optimale, 
+                        préservant tous les principes actifs naturels.
+                    </p>
+                </div>
+
+                <!-- Photo 3 -->
+                <div class="card">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1661941110384-7da311e05d0c" 
+                             alt="Séchage traditionnel des épices au soleil sur nattes en fibres naturelles" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    </div>
+                    <h3 class="font-headline text-lg font-semibold text-text-primary mb-2">Séchage Naturel</h3>
+                    <p class="text-text-secondary text-sm">
+                        Exposition contrôlée au soleil sahélien, 
+                        concentrant les arômes et préservant les nutriments.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-gradient-warm text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="font-headline text-3xl md:text-4xl font-bold mb-6">
+                Préservons Ensemble Notre Héritage
+            </h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto opacity-90">
+                En choisissant YAHYA, vous soutenez les agriculteurs traditionnels 
+                et participez à la préservation de notre patrimoine culinaire ancestral.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="product_catalog.html" class="bg-white text-primary px-8 py-4 rounded-lg font-cta font-semibold hover:bg-background transition-smooth shadow-warm">
+                    Découvrir nos Produits Authentiques
+                </a>
+                <a href="https://wa.me/237123456789?text=Je%20souhaite%20en%20savoir%20plus%20sur%20votre%20héritage%20agricole" 
+                   target="_blank" 
+                   class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-cta font-semibold hover:bg-white hover:text-primary transition-smooth flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+                    </svg>
+                    Nous Contacter
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <svg class="w-8 h-8 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                            <path d="M20 2L25 12H35L27 18L30 28L20 22L10 28L13 18L5 12H15L20 2Z"/>
+                            <circle cx="20" cy="30" r="3" fill="currentColor"/>
+                        </svg>
+                        <div>
+                            <h3 class="font-headline text-lg font-bold text-primary">YAHYA</h3>
+                            <p class="text-xs text-gray-400">Spice Enterprise</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">
+                        Préservons ensemble l'héritage culinaire du Grand Nord Cameroun 
+                        à travers des épices et du miel authentiques.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://wa.me/237123456789" target="_blank" class="text-gray-400 hover:text-primary transition-smooth">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+                            </svg>
+                        </a>
+                        <a href="https://t.me/yahyaspice" target="_blank" class="text-gray-400 hover:text-primary transition-smooth">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="homepage.html" class="text-gray-300 hover:text-primary transition-smooth">Accueil</a></li>
+                        <li><a href="product_catalog.html" class="text-gray-300 hover:text-primary transition-smooth">Nos Produits</a></li>
+                        <li><a href="regional_heritage.html" class="text-gray-300 hover:text-primary transition-smooth">Notre Héritage</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-primary transition-smooth">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Nos Produits</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="product_catalog.html" class="text-gray-300 hover:text-primary transition-smooth">Piments Séchés</a></li>
+                        <li><a href="product_catalog.html" class="text-gray-300 hover:text-primary transition-smooth">Curcuma Bio</a></li>
+                        <li><a href="product_catalog.html" class="text-gray-300 hover:text-primary transition-smooth">Miel Traditionnel</a></li>
+                        <li><a href="product_catalog.html" class="text-gray-300 hover:text-primary transition-smooth">Mélanges d'Épices</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Contact</h4>
+                    <div class="space-y-2 text-sm text-gray-300">
+                        <p class="flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            contact@yahyaspice.cm
+                        </p>
+                        <p class="flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                            +237 123 456 789
+                        </p>
+                        <p class="flex items-start gap-2">
+                            <svg class="w-4 h-4 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                            Grand Nord Cameroun
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400 text-sm">
+                    © 2025 YAHYA Spice Enterprise. Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/237123456789?text=Bonjour%20YAHYA%20Entreprise" 
+           target="_blank" 
+           class="bg-green-500 text-white p-4 rounded-full shadow-warm hover:bg-green-600 transition-smooth animate-gentle-bounce">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+            </svg>
+        </a>
+
+        <!-- Telegram Button -->
+        <a href="https://t.me/yahyaspice" 
+           target="_blank" 
+           class="bg-blue-500 text-white p-4 rounded-full shadow-warm hover:bg-blue-600 transition-smooth">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+            </svg>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation classes on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and sections
+        document.querySelectorAll('.card, section').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Interactive map points hover effects
+        document.querySelectorAll('[title]').forEach(point => {
+            point.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.1)';
+            });
+            
+            point.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

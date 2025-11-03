@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue Produits - YAHYA Spice Enterprise</title>
+    <meta name="description" content="Découvrez notre catalogue complet d'épices authentiques et de miel traditionnel du Grand Nord Cameroun. Filtrez par niveau de piquant, région d'origine et type de produit.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fyahyaspic8369back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body class="bg-background font-body">
+    <!-- Navigation Header -->
+    <header class="bg-surface shadow-gentle sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <svg class="w-10 h-10 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                        <path d="M20 2L25 12H35L27 18L30 28L20 22L10 28L13 18L5 12H15L20 2Z"/>
+                        <circle cx="20" cy="30" r="3" fill="currentColor"/>
+                    </svg>
+                    <div>
+                        <h1 class="font-headline text-xl font-bold text-primary">YAHYA</h1>
+                        <p class="text-xs text-text-muted">Spice Enterprise</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-smooth">Accueil</a>
+                    <a href="product_catalog.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Produits</a>
+                    <a href="regional_heritage.html" class="text-text-secondary hover:text-primary transition-smooth">Héritage</a>
+                    <a href="contact.html" class="text-text-secondary hover:text-primary transition-smooth">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden mt-4 hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-3 pb-4">
+                    <a href="homepage.html" class="text-text-secondary">Accueil</a>
+                    <a href="product_catalog.html" class="text-primary font-semibold">Produits</a>
+                    <a href="regional_heritage.html" class="text-text-secondary">Héritage</a>
+                    <a href="contact.html" class="text-text-secondary">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-16 bg-gradient-warm text-white">
+        <div class="absolute inset-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1566824099147-bef027d3a333" 
+                 alt="Marché traditionnel d'épices colorées au Cameroun avec des sacs d'épices disposés artistiquement" 
+                 class="w-full h-full object-cover"
+                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+        </div>
+        <div class="relative container mx-auto px-4 text-center">
+            <h1 class="font-headline text-4xl md:text-5xl font-bold mb-6">
+                Notre Catalogue Authentique
+            </h1>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto opacity-90">
+                Explorez notre collection complète d'épices traditionnelles et de miel pur, 
+                cultivés avec passion dans les terres fertiles du Grand Nord Cameroun.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <div class="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span class="text-sm font-semibold">45+ Produits Certifiés</span>
+                </div>
+                <div class="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span class="text-sm font-semibold">Origine Tracée</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter and Search Section -->
+    <section class="py-8 bg-surface border-b border-border">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-6 items-center justify-between">
+                <!-- Search Bar -->
+                <div class="flex-1 max-w-md">
+                    <div class="relative">
+                        <input type="text" 
+                               placeholder="Rechercher un produit..." 
+                               class="input-field pl-10 pr-4"
+                               id="search-input">
+                        <svg class="w-5 h-5 text-text-muted absolute left-3 top-1/2 transform -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Filter Controls -->
+                <div class="flex flex-wrap gap-4 items-center">
+                    <!-- Category Filter -->
+                    <select class="input-field min-w-40" id="category-filter">
+                        <option value="">Toutes catégories</option>
+                        <option value="peppers">Piments</option>
+                        <option value="turmeric">Curcuma</option>
+                        <option value="honey">Miel</option>
+                        <option value="spices">Autres Épices</option>
+                    </select>
+
+                    <!-- Heat Level Filter -->
+                    <select class="input-field min-w-40" id="heat-filter">
+                        <option value="">Niveau de piquant</option>
+                        <option value="mild">Doux (1-3)</option>
+                        <option value="medium">Moyen (4-6)</option>
+                        <option value="hot">Fort (7-8)</option>
+                        <option value="extreme">Extrême (9-10)</option>
+                    </select>
+
+                    <!-- Origin Filter -->
+                    <select class="input-field min-w-40" id="origin-filter">
+                        <option value="">Région d'origine</option>
+                        <option value="maroua">Maroua</option>
+                        <option value="garoua">Garoua</option>
+                        <option value="ngaoundere">Ngaoundéré</option>
+                        <option value="kousseri">Kousséri</option>
+                    </select>
+
+                    <!-- Reset Filters -->
+                    <button class="btn-accent flex items-center gap-2" id="reset-filters">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                        </svg>
+                        Réinitialiser
+                    </button>
+                </div>
+            </div>
+
+            <!-- Active Filters Display -->
+            <div class="mt-4 flex flex-wrap gap-2" id="active-filters">
+                <!-- Active filters will be displayed here dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories Navigation -->
+    <section class="py-8 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <button class="category-tab active" data-category="all">
+                    <div class="card text-center hover:shadow-warm transition-all duration-300 cursor-pointer">
+                        <svg class="w-8 h-8 text-primary mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                        </svg>
+                        <h3 class="font-semibold text-text-primary">Tous</h3>
+                        <p class="text-sm text-text-muted">45 produits</p>
+                    </div>
+                </button>
+
+                <button class="category-tab" data-category="peppers">
+                    <div class="card text-center hover:shadow-warm transition-all duration-300 cursor-pointer">
+                        <svg class="w-8 h-8 text-primary mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 2L13 14H7L10 2Z"/>
+                            <path d="M10 2C8 2 6 4 6 6C6 8 8 10 10 10C12 10 14 8 14 6C14 4 12 2 10 2Z"/>
+                        </svg>
+                        <h3 class="font-semibold text-text-primary">Piments</h3>
+                        <p class="text-sm text-text-muted">18 variétés</p>
+                    </div>
+                </button>
+
+                <button class="category-tab" data-category="turmeric">
+                    <div class="card text-center hover:shadow-warm transition-all duration-300 cursor-pointer">
+                        <svg class="w-8 h-8 text-primary mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z"/>
+                            <path d="M10 14C12.2091 14 14 12.2091 14 10C14 7.79086 12.2091 6 10 6C7.79086 6 6 7.79086 6 10C6 12.2091 7.79086 14 10 14Z"/>
+                        </svg>
+                        <h3 class="font-semibold text-text-primary">Curcuma</h3>
+                        <p class="text-sm text-text-muted">8 qualités</p>
+                    </div>
+                </button>
+
+                <button class="category-tab" data-category="honey">
+                    <div class="card text-center hover:shadow-warm transition-all duration-300 cursor-pointer">
+                        <svg class="w-8 h-8 text-primary mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M6 2L8 6H12L14 2H6Z"/>
+                            <path d="M4 8L6 6H14L16 8V16C16 17.1 15.1 18 14 18H6C4.9 18 4 17.1 4 16V8Z"/>
+                            <circle cx="10" cy="12" r="2"/>
+                        </svg>
+                        <h3 class="font-semibold text-text-primary">Miel</h3>
+                        <p class="text-sm text-text-muted">12 origines</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="py-12 bg-background">
+        <div class="container mx-auto px-4">
+            <!-- Results Header -->
+            <div class="flex items-center justify-between mb-8">
+                <div>
+                    <h2 class="font-headline text-2xl font-bold text-text-primary mb-2">Nos Produits Authentiques</h2>
+                    <p class="text-text-secondary" id="results-count">Affichage de 45 produits</p>
+                </div>
+                
+                <!-- Sort Options -->
+                <div class="flex items-center gap-4">
+                    <label class="text-sm text-text-secondary">Trier par:</label>
+                    <select class="input-field min-w-40" id="sort-select">
+                        <option value="name">Nom A-Z</option>
+                        <option value="price-low">Prix croissant</option>
+                        <option value="price-high">Prix décroissant</option>
+                        <option value="heat-level">Niveau de piquant</option>
+                        <option value="popularity">Popularité</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="products-grid">
+                <!-- Piment Rouge Séché Premium -->
+                <div class="product-card card group hover:shadow-warm transition-all duration-300 cursor-pointer" data-category="peppers" data-heat="8" data-origin="maroua" data-price="2500">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1585667492258-dd22be0fcd75" 
+                             alt="Piments rouges séchés premium de Maroua disposés artistiquement sur fond traditionnel" 
+                             class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                             loading="lazy"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div class="absolute top-3 left-3 bg-error text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Piquant: 8/10
+                        </div>
+                        <div class="absolute top-3 right-3 bg-primary text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Populaire
+                        </div>
+                        <button class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-white">
+                            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div>
+                            <h3 class="font-headline text-lg font-semibold text-text-primary mb-1">Piment Rouge Séché Premium</h3>
+                            <p class="text-sm text-text-muted">Région: Maroua • Récolte: Nov 2024</p>
+                        </div>
+                        
+                        <p class="text-text-secondary text-sm line-clamp-2">
+                            Piments traditionnels séchés au soleil selon les méthodes ancestrales. 
+                            Parfait pour vos plats authentiques du Grand Nord.
+                        </p>
+                        
+                        <!-- Quality Indicators -->
+                        <div class="flex items-center gap-2 text-xs">
+                            <span class="bg-success/20 text-success px-2 py-1 rounded-full">Bio</span>
+                            <span class="bg-primary/20 text-primary px-2 py-1 rounded-full">Séchage Solaire</span>
+                        </div>
+                        
+                        <!-- Stock Status -->
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-success rounded-full"></div>
+                            <span class="text-xs text-success">En stock (24 unités)</span>
+                        </div>
+                        
+                        <div class="flex items-center justify-between pt-2">
+                            <div>
+                                <span class="text-primary font-bold text-lg">2,500 FCFA</span>
+                                <span class="text-text-muted text-sm">/250g</span>
+                            </div>
+                            <div class="flex gap-2">
+                                <button class="bg-surface-200 text-text-primary p-2 rounded-lg hover:bg-surface-300 transition-smooth" title="Ajouter aux favoris">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </button>
+                                <a href="https://wa.me/237123456789?text=Je%20suis%20intéressé%20par%20le%20Piment%20Rouge%20Séché%20Premium" 
+                                   target="_blank" 
+                                   class="bg-primary text-white px-3 py-2 rounded-lg hover:bg-primary-700 transition-smooth flex items-center gap-1">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+                                    </svg>
+                                    Commander
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curcuma Bio Premium -->
+                <div class="product-card card group hover:shadow-warm transition-all duration-300 cursor-pointer" data-category="turmeric" data-heat="0" data-origin="garoua" data-price="3000">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1612504981900-1173d0011c2e" 
+                             alt="Curcuma bio en poudre dorée de Garoua dans un bol traditionnel en bois sculpté" 
+                             class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                             loading="lazy"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div class="absolute top-3 left-3 bg-accent text-text-primary px-2 py-1 rounded-full text-xs font-semibold">
+                            Curcumine: 8.2%
+                        </div>
+                        <div class="absolute top-3 right-3 bg-success text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Bio Certifié
+                        </div>
+                        <button class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-white">
+                            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div>
+                            <h3 class="font-headline text-lg font-semibold text-text-primary mb-1">Curcuma Bio Premium</h3>
+                            <p class="text-sm text-text-muted">Région: Garoua • Récolte: Oct 2024</p>
+                        </div>
+                        
+                        <p class="text-text-secondary text-sm line-clamp-2">
+                            Curcuma pur cultivé biologiquement, riche en curcumine naturelle. 
+                            Propriétés anti-inflammatoires exceptionnelles.
+                        </p>
+                        
+                        <!-- Quality Indicators -->
+                        <div class="flex items-center gap-2 text-xs">
+                            <span class="bg-success/20 text-success px-2 py-1 rounded-full">Bio</span>
+                            <span class="bg-accent/20 text-text-primary px-2 py-1 rounded-full">Haute Curcumine</span>
+                        </div>
+                        
+                        <!-- Stock Status -->
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-success rounded-full"></div>
+                            <span class="text-xs text-success">En stock (18 unités)</span>
+                        </div>
+                        
+                        <div class="flex items-center justify-between pt-2">
+                            <div>
+                                <span class="text-primary font-bold text-lg">3,000 FCFA</span>
+                                <span class="text-text-muted text-sm">/200g</span>
+                            </div>
+                            <div class="flex gap-2">
+                                <button class="bg-surface-200 text-text-primary p-2 rounded-lg hover:bg-surface-300 transition-smooth" title="Ajouter aux favoris">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </button>
+                                <a href="https://wa.me/237123456789?text=Je%20suis%20intéressé%20par%20le%20Curcuma%20Bio%20Premium" 
+                                   target="_blank" 
+                                   class="bg-primary text-white px-3 py-2 rounded-lg hover:bg-primary-700 transition-smooth flex items-center gap-1">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+                                    </svg>
+                                    Commander
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miel d'Acacia Traditionnel -->
+                <div class="product-card card group hover:shadow-warm transition-all duration-300 cursor-pointer" data-category="honey" data-heat="0" data-origin="ngaoundere" data-price="4500">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1709008588996-7fab716e9f1b" 
+                             alt="Miel d'acacia traditionnel doré de Ngaoundéré coulant d'une cuillère en bois dans un pot artisanal" 
+                             class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                             loading="lazy"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div class="absolute top-3 left-3 bg-accent text-text-primary px-2 py-1 rounded-full text-xs font-semibold">
+                            Acacia Pur
+                        </div>
+                        <div class="absolute top-3 right-3 bg-accent text-text-primary px-2 py-1 rounded-full text-xs font-semibold">
+                            Premium
+                        </div>
+                        <button class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-white">
+                            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div>
+                            <h3 class="font-headline text-lg font-semibold text-text-primary mb-1">Miel d'Acacia Traditionnel</h3>
+                            <p class="text-sm text-text-muted">Région: Ngaoundéré • Récolte: Sep 2024</p>
+                        </div>
+                        
+                        <p class="text-text-secondary text-sm line-clamp-2">
+                            Miel pur récolté selon les méthodes ancestrales, aux saveurs florales uniques. 
+                            Cristallisation lente et texture onctueuse.
+                        </p>
+                        
+                        <!-- Quality Indicators -->
+                        <div class="flex items-center gap-2 text-xs">
+                            <span class="bg-accent/20 text-text-primary px-2 py-1 rounded-full">Monofloral</span>
+                            <span class="bg-primary/20 text-primary px-2 py-1 rounded-full">Récolte Manuelle</span>
+                        </div>
+                        
+                        <!-- Stock Status -->
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-warning rounded-full"></div>
+                            <span class="text-xs text-warning">Stock limité (6 unités)</span>
+                        </div>
+                        
+                        <div class="flex items-center justify-between pt-2">
+                            <div>
+                                <span class="text-primary font-bold text-lg">4,500 FCFA</span>
+                                <span class="text-text-muted text-sm">/500g</span>
+                            </div>
+                            <div class="flex gap-2">
+                                <button class="bg-surface-200 text-text-primary p-2 rounded-lg hover:bg-surface-300 transition-smooth" title="Ajouter aux favoris">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </button>
+                                <a href="https://wa.me/237123456789?text=Je%20suis%20intéressé%20par%20le%20Miel%20d'Acacia%20Traditionnel" 
+                                   target="_blank" 
+                                   class="bg-primary text-white px-3 py-2 rounded-lg hover:bg-primary-700 transition-smooth flex items-center gap-1">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+                                    </svg>
+                                    Commander
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Piment Scotch Bonnet -->
+                <div class="product-card card group hover:shadow-warm transition-all duration-300 cursor-pointer" data-category="peppers" data-heat="9" data-origin="kousseri" data-price="3500">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1650080892550-c3a9a3ed1345" 
+                             alt="Piments Scotch Bonnet orange vif de Kousséri séchés selon la tradition, disposés sur une natte" 
+                             class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                             loading="lazy"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div class="absolute top-3 left-3 bg-error text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Piquant: 9/10
+                        </div>
+                        <div class="absolute top-3 right-3 bg-warning text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Extrême
+                        </div>
+                        <button class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-white">
+                            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div>
+                            <h3 class="font-headline text-lg font-semibold text-text-primary mb-1">Piment Scotch Bonnet</h3>
+                            <p class="text-sm text-text-muted">Région: Kousséri • Récolte: Nov 2024</p>
+                        </div>
+                        
+                        <p class="text-text-secondary text-sm line-clamp-2">
+                            Variété extrêmement piquante aux arômes fruités uniques. 
+                            Idéal pour les amateurs de sensations fortes.
+                        </p>
+                        
+                        <!-- Quality Indicators -->
+                        <div class="flex items-center gap-2 text-xs">
+                            <span class="bg-error/20 text-error px-2 py-1 rounded-full">Très Fort</span>
+                            <span class="bg-primary/20 text-primary px-2 py-1 rounded-full">Arôme Fruité</span>
+                        </div>
+                        
+                        <!-- Stock Status -->
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-success rounded-full"></div>
+                            <span class="text-xs text-success">En stock (12 unités)</span>
+                        </div>
+                        
+                        <div class="flex items-center justify-between pt-2">
+                            <div>
+                                <span class="text-primary font-bold text-lg">3,500 FCFA</span>
+                                <span class="text-text-muted text-sm">/200g</span>
+                            </div>
+                            <div class="flex gap-2">
+                                <button class="bg-surface-200 text-text-primary p-2 rounded-lg hover:bg-surface-300 transition-smooth" title="Ajouter aux favoris">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </button>
+                                <a href="https://wa.me/237123456789?text=Je%20suis%20intéressé%20par%20le%20Piment%20Scotch%20Bonnet" 
+                                   target="_blank" 
+                                   class="bg-primary text-white px-3 py-2 rounded-lg hover:bg-primary-700 transition-smooth flex items-center gap-1">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+                                    </svg>
+                                    Commander
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gingembre Séché -->
+                <div class="product-card card group hover:shadow-warm transition-all duration-300 cursor-pointer" data-category="spices" data-heat="2" data-origin="maroua" data-price="2800">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1684241087798-ce3a6c3836ad" 
+                             alt="Racines de gingembre séché de Maroua coupées en tranches, disposées sur fond de bois traditionnel" 
+                             class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                             loading="lazy"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div class="absolute top-3 left-3 bg-success text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Piquant: 2/10
+                        </div>
+                        <div class="absolute top-3 right-3 bg-success text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Médicinal
+                        </div>
+                        <button class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-white">
+                            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div>
+                            <h3 class="font-headline text-lg font-semibold text-text-primary mb-1">Gingembre Séché</h3>
+                            <p class="text-sm text-text-muted">Région: Maroua • Récolte: Oct 2024</p>
+                        </div>
+                        
+                        <p class="text-text-secondary text-sm line-clamp-2">
+                            Gingembre traditionnel séché, aux propriétés digestives reconnues. 
+                            Parfait pour tisanes et préparations culinaires.
+                        </p>
+                        
+                        <!-- Quality Indicators -->
+                        <div class="flex items-center gap-2 text-xs">
+                            <span class="bg-success/20 text-success px-2 py-1 rounded-full">Digestif</span>
+                            <span class="bg-primary/20 text-primary px-2 py-1 rounded-full">Séchage Naturel</span>
+                        </div>
+                        
+                        <!-- Stock Status -->
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-success rounded-full"></div>
+                            <span class="text-xs text-success">En stock (15 unités)</span>
+                        </div>
+                        
+                        <div class="flex items-center justify-between pt-2">
+                            <div>
+                                <span class="text-primary font-bold text-lg">2,800 FCFA</span>
+                                <span class="text-text-muted text-sm">/300g</span>
+                            </div>
+                            <div class="flex gap-2">
+                                <button class="bg-surface-200 text-text-primary p-2 rounded-lg hover:bg-surface-300 transition-smooth" title="Ajouter aux favoris">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </button>
+                                <a href="https://wa.me/237123456789?text=Je%20suis%20intéressé%20par%20le%20Gingembre%20Séché" 
+                                   target="_blank" 
+                                   class="bg-primary text-white px-3 py-2 rounded-lg hover:bg-primary-700 transition-smooth flex items-center gap-1">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+                                    </svg>
+                                    Commander
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miel de Karité -->
+                <div class="product-card card group hover:shadow-warm transition-all duration-300 cursor-pointer" data-category="honey" data-heat="0" data-origin="garoua" data-price="5200">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1719871766551-b9ecf87eee51" 
+                             alt="Miel de karité ambré de Garoua dans un pot traditionnel en terre cuite, avec fleurs de karité" 
+                             class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                             loading="lazy"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div class="absolute top-3 left-3 bg-accent text-text-primary px-2 py-1 rounded-full text-xs font-semibold">
+                            Karité Pur
+                        </div>
+                        <div class="absolute top-3 right-3 bg-primary text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Rare
+                        </div>
+                        <button class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-white">
+                            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div>
+                            <h3 class="font-headline text-lg font-semibold text-text-primary mb-1">Miel de Karité</h3>
+                            <p class="text-sm text-text-muted">Région: Garoua • Récolte: Août 2024</p>
+                        </div>
+                        
+                        <p class="text-text-secondary text-sm line-clamp-2">
+                            Miel rare issu des fleurs de karité, aux propriétés cosmétiques exceptionnelles. 
+                            Texture crémeuse et goût délicat.
+                        </p>
+                        
+                        <!-- Quality Indicators -->
+                        <div class="flex items-center gap-2 text-xs">
+                            <span class="bg-accent/20 text-text-primary px-2 py-1 rounded-full">Rare</span>
+                            <span class="bg-primary/20 text-primary px-2 py-1 rounded-full">Cosmétique</span>
+                        </div>
+                        
+                        <!-- Stock Status -->
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-error rounded-full"></div>
+                            <span class="text-xs text-error">Stock très limité (3 unités)</span>
+                        </div>
+                        
+                        <div class="flex items-center justify-between pt-2">
+                            <div>
+                                <span class="text-primary font-bold text-lg">5,200 FCFA</span>
+                                <span class="text-text-muted text-sm">/400g</span>
+                            </div>
+                            <div class="flex gap-2">
+                                <button class="bg-surface-200 text-text-primary p-2 rounded-lg hover:bg-surface-300 transition-smooth" title="Ajouter aux favoris">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </button>
+                                <a href="https://wa.me/237123456789?text=Je%20suis%20intéressé%20par%20le%20Miel%20de%20Karité" 
+                                   target="_blank" 
+                                   class="bg-primary text-white px-3 py-2 rounded-lg hover:bg-primary-700 transition-smooth flex items-center gap-1">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+                                    </svg>
+                                    Commander
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Poivre de Penja -->
+                <div class="product-card card group hover:shadow-warm transition-all duration-300 cursor-pointer" data-category="spices" data-heat="4" data-origin="ngaoundere" data-price="4200">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1670501666001-5318c7a0aabd" 
+                             alt="Grains de poivre de Penja noir et blanc de Ngaoundéré dans des bols en bois sculpté" 
+                             class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                             loading="lazy"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div class="absolute top-3 left-3 bg-primary text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Piquant: 4/10
+                        </div>
+                        <div class="absolute top-3 right-3 bg-accent text-text-primary px-2 py-1 rounded-full text-xs font-semibold">
+                            IGP
+                        </div>
+                        <button class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-white">
+                            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div>
+                            <h3 class="font-headline text-lg font-semibold text-text-primary mb-1">Poivre de Penja</h3>
+                            <p class="text-sm text-text-muted">Région: Ngaoundéré • Récolte: Sep 2024</p>
+                        </div>
+                        
+                        <p class="text-text-secondary text-sm line-clamp-2">
+                            Poivre d'exception aux arômes complexes, reconnu mondialement. 
+                            Indication géographique protégée du Cameroun.
+                        </p>
+                        
+                        <!-- Quality Indicators -->
+                        <div class="flex items-center gap-2 text-xs">
+                            <span class="bg-accent/20 text-text-primary px-2 py-1 rounded-full">IGP</span>
+                            <span class="bg-primary/20 text-primary px-2 py-1 rounded-full">Premium</span>
+                        </div>
+                        
+                        <!-- Stock Status -->
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-success rounded-full"></div>
+                            <span class="text-xs text-success">En stock (8 unités)</span>
+                        </div>
+                        
+                        <div class="flex items-center justify-between pt-2">
+                            <div>
+                                <span class="text-primary font-bold text-lg">4,200 FCFA</span>
+                                <span class="text-text-muted text-sm">/150g</span>
+                            </div>
+                            <div class="flex gap-2">
+                                <button class="bg-surface-200 text-text-primary p-2 rounded-lg hover:bg-surface-300 transition-smooth" title="Ajouter aux favoris">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </button>
+                                <a href="https://wa.me/237123456789?text=Je%20suis%20intéressé%20par%20le%20Poivre%20de%20Penja" 
+                                   target="_blank" 
+                                   class="bg-primary text-white px-3 py-2 rounded-lg hover:bg-primary-700 transition-smooth flex items-center gap-1">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+                                    </svg>
+                                    Commander
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button class="btn-secondary text-lg px-8 py-4" id="load-more-btn">
+                    Charger Plus de Produits
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educational Content Section -->
+    <section class="py-16 bg-surface">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-headline text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Guide des Épices & Conseils
+                </h2>
+                <p class="text-text-secondary text-lg max-w-2xl mx-auto">
+                    Apprenez à utiliser et conserver nos produits pour en tirer le meilleur parti. 
+                    Découvrez les secrets de la cuisine traditionnelle du Grand Nord.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Heat Level Guide -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-error/20 p-3 rounded-lg mr-4">
+                            <svg class="w-6 h-6 text-error" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 2L13 14H7L10 2Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-headline text-xl font-semibold text-text-primary">Échelle de Piquant</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm">Doux (1-3)</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-3 bg-success rounded-full"></div>
+                                <div class="w-3 h-3 bg-surface-300 rounded-full"></div>
+                                <div class="w-3 h-3 bg-surface-300 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm">Moyen (4-6)</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-3 bg-warning rounded-full"></div>
+                                <div class="w-3 h-3 bg-warning rounded-full"></div>
+                                <div class="w-3 h-3 bg-surface-300 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm">Fort (7-8)</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-3 bg-error rounded-full"></div>
+                                <div class="w-3 h-3 bg-error rounded-full"></div>
+                                <div class="w-3 h-3 bg-error rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm">Extrême (9-10)</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-3 bg-error rounded-full animate-pulse"></div>
+                                <div class="w-3 h-3 bg-error rounded-full animate-pulse"></div>
+                                <div class="w-3 h-3 bg-error rounded-full animate-pulse"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Storage Tips -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary/20 p-3 rounded-lg mr-4">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-headline text-xl font-semibold text-text-primary">Conservation</h3>
+                    </div>
+                    <ul class="space-y-2 text-sm text-text-secondary">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-success mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Contenants hermétiques
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-success mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Endroit sec et frais
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-success mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            À l'abri de la lumière
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-success mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Durée: 18-24 mois
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Recipe Suggestions -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-accent/20 p-3 rounded-lg mr-4">
+                            <svg class="w-6 h-6 text-text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-headline text-xl font-semibold text-text-primary">Recettes</h3>
+                    </div>
+                    <ul class="space-y-2 text-sm text-text-secondary">
+                        <li class="flex items-start gap-2">
+                            <span class="text-primary">•</span>
+                            Sauce Gombo au Piment
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-primary">•</span>
+                            Thé au Gingembre et Miel
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-primary">•</span>
+                            Riz au Curcuma
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-primary">•</span>
+                            Marinade au Poivre
+                        </li>
+                    </ul>
+                    <a href="regional_heritage.html" class="inline-flex items-center gap-2 text-primary hover:text-primary-700 transition-smooth mt-3 text-sm font-semibold">
+                        Voir toutes les recettes
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bulk Order CTA -->
+    <section class="py-16 bg-gradient-warm text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="font-headline text-3xl md:text-4xl font-bold mb-6">
+                Commandes en Gros
+            </h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto opacity-90">
+                Restaurateurs, épiciers, revendeurs ? Bénéficiez de nos tarifs préférentiels 
+                pour vos commandes en volume. Contactez-nous pour un devis personnalisé.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://wa.me/237123456789?text=Bonjour,%20je%20souhaite%20obtenir%20un%20devis%20pour%20une%20commande%20en%20gros" 
+                   target="_blank" 
+                   class="bg-white text-primary px-8 py-4 rounded-lg font-cta font-semibold hover:bg-background transition-smooth flex items-center gap-2 shadow-warm">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+                    </svg>
+                    Demander un Devis
+                </a>
+                <div class="flex items-center gap-4 text-sm opacity-80">
+                    <div class="flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        Tarifs dégressifs
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        Livraison gratuite
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <svg class="w-8 h-8 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                            <path d="M20 2L25 12H35L27 18L30 28L20 22L10 28L13 18L5 12H15L20 2Z"/>
+                            <circle cx="20" cy="30" r="3" fill="currentColor"/>
+                        </svg>
+                        <div>
+                            <h3 class="font-headline text-lg font-bold text-primary">YAHYA</h3>
+                            <p class="text-xs text-gray-400">Spice Enterprise</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">
+                        Préservons ensemble l'héritage culinaire du Grand Nord Cameroun 
+                        à travers des épices et du miel authentiques.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://wa.me/237123456789" target="_blank" class="text-gray-400 hover:text-primary transition-smooth">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+                            </svg>
+                        </a>
+                        <a href="https://t.me/yahyaspice" target="_blank" class="text-gray-400 hover:text-primary transition-smooth">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="homepage.html" class="text-gray-300 hover:text-primary transition-smooth">Accueil</a></li>
+                        <li><a href="product_catalog.html" class="text-gray-300 hover:text-primary transition-smooth">Nos Produits</a></li>
+                        <li><a href="regional_heritage.html" class="text-gray-300 hover:text-primary transition-smooth">Notre Héritage</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-primary transition-smooth">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Nos Produits</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="product_catalog.html" class="text-gray-300 hover:text-primary transition-smooth">Piments Séchés</a></li>
+                        <li><a href="product_catalog.html" class="text-gray-300 hover:text-primary transition-smooth">Curcuma Bio</a></li>
+                        <li><a href="product_catalog.html" class="text-gray-300 hover:text-primary transition-smooth">Miel Traditionnel</a></li>
+                        <li><a href="product_catalog.html" class="text-gray-300 hover:text-primary transition-smooth">Mélanges d'Épices</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Contact</h4>
+                    <div class="space-y-2 text-sm text-gray-300">
+                        <p class="flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            contact@yahyaspice.cm
+                        </p>
+                        <p class="flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                            +237 123 456 789
+                        </p>
+                        <p class="flex items-start gap-2">
+                            <svg class="w-4 h-4 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                            Grand Nord Cameroun
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400 text-sm">
+                    © 2025 YAHYA Spice Enterprise. Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/237123456789?text=Bonjour%20YAHYA%20Entreprise" 
+           target="_blank" 
+           class="bg-green-500 text-white p-4 rounded-full shadow-warm hover:bg-green-600 transition-smooth animate-gentle-bounce">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+            </svg>
+        </a>
+
+        <!-- Telegram Button -->
+        <a href="https://t.me/yahyaspice" 
+           target="_blank" 
+           class="bg-blue-500 text-white p-4 rounded-full shadow-warm hover:bg-blue-600 transition-smooth">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Product Quick View Modal -->
+    <div id="quick-view-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="bg-surface rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="font-headline text-2xl font-bold text-text-primary">Aperçu Rapide</h3>
+                    <button id="close-modal" class="p-2 hover:bg-surface-200 rounded-lg transition-smooth">
+                        <svg class="w-6 h-6 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="modal-content">
+                    <!-- Modal content will be populated dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Category tabs functionality
+        const categoryTabs = document.querySelectorAll('.category-tab');
+        const productCards = document.querySelectorAll('.product-card');
+
+        categoryTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                const category = this.dataset.category;
+                
+                // Update active tab
+                categoryTabs.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter products
+                filterProducts();
+            });
+        });
+
+        // Filter functionality
+        const searchInput = document.getElementById('search-input');
+        const categoryFilter = document.getElementById('category-filter');
+        const heatFilter = document.getElementById('heat-filter');
+        const originFilter = document.getElementById('origin-filter');
+        const sortSelect = document.getElementById('sort-select');
+        const resetFiltersBtn = document.getElementById('reset-filters');
+        const activeFiltersContainer = document.getElementById('active-filters');
+        const resultsCount = document.getElementById('results-count');
+
+        function filterProducts() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const selectedCategory = categoryFilter.value || document.querySelector('.category-tab.active').dataset.category;
+            const selectedHeat = heatFilter.value;
+            const selectedOrigin = originFilter.value;
+            
+            let visibleCount = 0;
+            
+            productCards.forEach(card => {
+                const cardCategory = card.dataset.category;
+                const cardHeat = parseInt(card.dataset.heat);
+                const cardOrigin = card.dataset.origin;
+                const cardText = card.textContent.toLowerCase();
+                
+                let shouldShow = true;
+                
+                // Category filter
+                if (selectedCategory !== 'all' && cardCategory !== selectedCategory) {
+                    shouldShow = false;
+                }
+                
+                // Search filter
+                if (searchTerm && !cardText.includes(searchTerm)) {
+                    shouldShow = false;
+                }
+                
+                // Heat level filter
+                if (selectedHeat) {
+                    const heatRanges = {
+                        'mild': [1, 3],
+                        'medium': [4, 6],
+                        'hot': [7, 8],
+                        'extreme': [9, 10]
+                    };
+                    const range = heatRanges[selectedHeat];
+                    if (range && (cardHeat < range[0] || cardHeat > range[1])) {
+                        shouldShow = false;
+                    }
+                }
+                
+                // Origin filter
+                if (selectedOrigin && cardOrigin !== selectedOrigin) {
+                    shouldShow = false;
+                }
+                
+                if (shouldShow) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            // Update results count
+            resultsCount.textContent = `Affichage de ${visibleCount} produit${visibleCount > 1 ? 's' : ''}`;
+            
+            // Update active filters display
+            updateActiveFilters();
+            
+            // Sort products
+            sortProducts();
+        }
+
+        function updateActiveFilters() {
+            const activeFilters = [];
+            
+            if (searchInput.value) {
+                activeFilters.push({
+                    type: 'search',
+                    label: `Recherche: "${searchInput.value}"`,
+                    value: searchInput.value
+                });
+            }
+            
+            if (categoryFilter.value) {
+                const option = categoryFilter.querySelector(`option[value="${categoryFilter.value}"]`);
+                activeFilters.push({
+                    type: 'category',
+                    label: `Catégorie: ${option.textContent}`,
+                    value: categoryFilter.value
+                });
+            }
+            
+            if (heatFilter.value) {
+                const option = heatFilter.querySelector(`option[value="${heatFilter.value}"]`);
+                activeFilters.push({
+                    type: 'heat',
+                    label: `Piquant: ${option.textContent}`,
+                    value: heatFilter.value
+                });
+            }
+            
+            if (originFilter.value) {
+                const option = originFilter.querySelector(`option[value="${originFilter.value}"]`);
+                activeFilters.push({
+                    type: 'origin',
+                    label: `Origine: ${option.textContent}`,
+                    value: originFilter.value
+                });
+            }
+            
+            activeFiltersContainer.innerHTML = '';
+            
+            activeFilters.forEach(filter => {
+                const filterTag = document.createElement('div');
+                filterTag.className = 'bg-primary/20 text-primary px-3 py-1 rounded-full text-sm flex items-center gap-2';
+                filterTag.innerHTML = `
+                    ${filter.label}
+                    <button class="hover:bg-primary/30 rounded-full p-1" onclick="removeFilter('${filter.type}', '${filter.value}')">
+                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                `;
+                activeFiltersContainer.appendChild(filterTag);
+            });
+        }
+
+        function removeFilter(type, value) {
+            switch(type) {
+                case 'search':
+                    searchInput.value = '';
+                    break;
+                case 'category':
+                    categoryFilter.value = '';
+                    break;
+                case 'heat':
+                    heatFilter.value = '';
+                    break;
+                case 'origin':
+                    originFilter.value = '';
+                    break;
+            }
+            filterProducts();
+        }
+
+        function sortProducts() {
+            const sortValue = sortSelect.value;
+            const productsGrid = document.getElementById('products-grid');
+            const products = Array.from(productCards);
+            
+            products.sort((a, b) => {
+                switch(sortValue) {
+                    case 'name':
+                        return a.querySelector('h3').textContent.localeCompare(b.querySelector('h3').textContent);
+                    case 'price-low':
+                        return parseInt(a.dataset.price) - parseInt(b.dataset.price);
+                    case 'price-high':
+                        return parseInt(b.dataset.price) - parseInt(a.dataset.price);
+                    case 'heat-level':
+                        return parseInt(b.dataset.heat) - parseInt(a.dataset.heat);
+                    case 'popularity':
+                        // Mock popularity sorting
+                        return Math.random() - 0.5;
+                    default:
+                        return 0;
+                }
+            });
+            
+            products.forEach(product => {
+                productsGrid.appendChild(product);
+            });
+        }
+
+        // Event listeners
+        searchInput.addEventListener('input', filterProducts);
+        categoryFilter.addEventListener('change', filterProducts);
+        heatFilter.addEventListener('change', filterProducts);
+        originFilter.addEventListener('change', filterProducts);
+        sortSelect.addEventListener('change', sortProducts);
+
+        resetFiltersBtn.addEventListener('click', function() {
+            searchInput.value = '';
+            categoryFilter.value = '';
+            heatFilter.value = '';
+            originFilter.value = '';
+            sortSelect.value = 'name';
+            
+            // Reset category tabs
+            categoryTabs.forEach(t => t.classList.remove('active'));
+            document.querySelector('.category-tab[data-category="all"]').classList.add('active');
+            
+            filterProducts();
+        });
+
+        // Quick view modal functionality
+        const quickViewModal = document.getElementById('quick-view-modal');
+        const closeModalBtn = document.getElementById('close-modal');
+        const modalContent = document.getElementById('modal-content');
+
+        // Add click listeners to zoom buttons
+        document.querySelectorAll('.product-card button[title="Zoom"]').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const productCard = this.closest('.product-card');
+                showQuickView(productCard);
+            });
+        });
+
+        function showQuickView(productCard) {
+            const img = productCard.querySelector('img');
+            const title = productCard.querySelector('h3').textContent;
+            const description = productCard.querySelector('p.line-clamp-2').textContent;
+            const price = productCard.querySelector('.text-primary.font-bold').textContent;
+            const region = productCard.querySelector('.text-text-muted').textContent;
+            
+            modalContent.innerHTML = `
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <img src="${img.src}" alt="${img.alt}" class="w-full h-64 object-cover rounded-lg">
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-headline text-xl font-semibold text-text-primary mb-2">${title}</h4>
+                            <p class="text-sm text-text-muted">${region}</p>
+                        </div>
+                        <p class="text-text-secondary">${description}</p>
+                        <div class="text-2xl font-bold text-primary">${price}</div>
+                        <div class="flex gap-3">
+                            <button class="btn-primary flex-1">Ajouter aux Favoris</button>
+                            <a href="https://wa.me/237123456789?text=Je%20suis%20intéressé%20par%20${encodeURIComponent(title)}" 
+                               target="_blank" 
+                               class="btn-accent flex-1 text-center">
+                                Commander
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            quickViewModal.classList.remove('hidden');
+            quickViewModal.classList.add('flex');
+        }
+
+        closeModalBtn.addEventListener('click', function() {
+            quickViewModal.classList.add('hidden');
+            quickViewModal.classList.remove('flex');
+        });
+
+        quickViewModal.addEventListener('click', function(e) {
+            if (e.target === quickViewModal) {
+                quickViewModal.classList.add('hidden');
+                quickViewModal.classList.remove('flex');
+            }
+        });
+
+        // Load more functionality
+        const loadMoreBtn = document.getElementById('load-more-btn');
+        let currentPage = 1;
+        const productsPerPage = 8;
+
+        loadMoreBtn.addEventListener('click', function() {
+            // Simulate loading more products
+            this.textContent = 'Chargement...';
+            this.disabled = true;
+            
+            setTimeout(() => {
+                // In a real application, you would fetch more products from an API
+                this.textContent = 'Charger Plus de Produits';
+                this.disabled = false;
+                currentPage++;
+                
+                // Hide button after loading a few pages (simulation)
+                if (currentPage > 3) {
+                    this.style.display = 'none';
+                }
+            }, 1000);
+        });
+
+        // Initialize filters
+        filterProducts();
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation classes on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and sections
+        document.querySelectorAll('.card, section').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

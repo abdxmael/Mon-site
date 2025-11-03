@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors - Warm terracotta reflecting traditional clay and spice warmth */
+  --color-primary: #D4741A; /* orange-600 */
+  --color-primary-50: #FEF7ED; /* orange-50 */
+  --color-primary-100: #FDEDD3; /* orange-100 */
+  --color-primary-200: #FCD9A6; /* orange-200 */
+  --color-primary-300: #FBBF24; /* orange-300 */
+  --color-primary-400: #F59E0B; /* orange-400 */
+  --color-primary-500: #D97706; /* orange-500 */
+  --color-primary-600: #D4741A; /* orange-600 */
+  --color-primary-700: #B45309; /* orange-700 */
+  --color-primary-800: #92400E; /* orange-800 */
+  --color-primary-900: #78350F; /* orange-900 */
+
+  /* Secondary Colors - Rich earth brown grounding brand in agricultural heritage */
+  --color-secondary: #8B4513; /* amber-800 */
+  --color-secondary-50: #FFFBEB; /* amber-50 */
+  --color-secondary-100: #FEF3C7; /* amber-100 */
+  --color-secondary-200: #FDE68A; /* amber-200 */
+  --color-secondary-300: #FCD34D; /* amber-300 */
+  --color-secondary-400: #FBBF24; /* amber-400 */
+  --color-secondary-500: #F59E0B; /* amber-500 */
+  --color-secondary-600: #D97706; /* amber-600 */
+  --color-secondary-700: #B45309; /* amber-700 */
+  --color-secondary-800: #8B4513; /* amber-800 */
+  --color-secondary-900: #78350F; /* amber-900 */
+
+  /* Accent Colors - Golden honey highlighting calls-to-action and success moments */
+  --color-accent: #F4A460; /* yellow-400 */
+  --color-accent-50: #FEFCE8; /* yellow-50 */
+  --color-accent-100: #FEF9C3; /* yellow-100 */
+  --color-accent-200: #FEF08A; /* yellow-200 */
+  --color-accent-300: #FDE047; /* yellow-300 */
+  --color-accent-400: #F4A460; /* yellow-400 */
+  --color-accent-500: #EAB308; /* yellow-500 */
+  --color-accent-600: #CA8A04; /* yellow-600 */
+  --color-accent-700: #A16207; /* yellow-700 */
+  --color-accent-800: #854D0E; /* yellow-800 */
+  --color-accent-900: #713F12; /* yellow-900 */
+
+  /* Background Colors - Warm cream providing gentle canvas for content */
+  --color-background: #FDF6E3; /* stone-50 */
+  --color-background-50: #FAFAF9; /* stone-50 */
+  --color-background-100: #F5F5F4; /* stone-100 */
+  --color-background-200: #E7E5E4; /* stone-200 */
+
+  /* Surface Colors - Subtle beige creating depth without harsh contrast */
+  --color-surface: #F5F0E8; /* stone-100 */
+  --color-surface-50: #FAFAF9; /* stone-50 */
+  --color-surface-100: #F5F0E8; /* stone-100 */
+  --color-surface-200: #E7E5E4; /* stone-200 */
+  --color-surface-300: #D6D3D1; /* stone-300 */
+
+  /* Text Colors - Deep brown ensuring readability while maintaining warmth */
+  --color-text-primary: #2C1810; /* stone-900 */
+  --color-text-secondary: #5D4037; /* stone-700 */
+  --color-text-muted: #78716C; /* stone-500 */
+
+  /* Utility Colors */
+  --color-success: #7CB342; /* green-600 */
+  --color-warning: #FF8F00; /* orange-500 */
+  --color-error: #D84315; /* red-600 */
+
+  /* Border Colors */
+  --color-border: #E8DDD4; /* stone-200 */
+  --color-border-light: #F5F0E8; /* stone-100 */
+
+  /* Shadow Colors */
+  --shadow-warm: 0 4px 12px rgba(212, 116, 26, 0.15);
+  --shadow-subtle: 0 2px 8px rgba(212, 116, 26, 0.1);
+  --shadow-gentle: 0 1px 4px rgba(212, 116, 26, 0.08);
+}
+
+/* Base Styles */
+@layer base {
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--color-text-primary);
+  }
+
+  .font-headline {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-body {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .font-cta {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  .font-accent {
+    font-family: 'Crimson Text', serif;
+  }
+}
+
+/* Component Styles */
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-cta font-semibold transition-all duration-300 ease-out hover:bg-primary-700 focus:ring-4 focus:ring-primary-200;
+    box-shadow: var(--shadow-warm);
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white px-6 py-3 rounded-lg font-cta font-semibold transition-all duration-300 ease-out hover:bg-secondary-700 focus:ring-4 focus:ring-secondary-200;
+    box-shadow: var(--shadow-warm);
+  }
+
+  .btn-accent {
+    @apply bg-accent text-text-primary px-6 py-3 rounded-lg font-cta font-semibold transition-all duration-300 ease-out hover:bg-accent-500 focus:ring-4 focus:ring-accent-200;
+    box-shadow: var(--shadow-warm);
+  }
+
+  .card {
+    @apply bg-surface rounded-xl p-6 transition-all duration-300 ease-out;
+    box-shadow: var(--shadow-gentle);
+  }
+
+  .card:hover {
+    box-shadow: var(--shadow-warm);
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-lg border border-border bg-background text-text-primary placeholder-text-muted focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-primary transition-all duration-300 ease-out;
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+/* Utility Classes */
+@layer utilities {
+  .shadow-warm {
+    box-shadow: var(--shadow-warm);
+  }
+
+  .shadow-subtle {
+    box-shadow: var(--shadow-subtle);
+  }
+
+  .shadow-gentle {
+    box-shadow: var(--shadow-gentle);
+  }
+
+  .transition-smooth {
+    transition: all 300ms ease-out;
+  }
+
+  .bg-gradient-warm {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  }
+
+  .bg-gradient-earth {
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+  }
+}

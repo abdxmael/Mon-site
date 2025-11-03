@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - YAHYA Spice Enterprise | Commandez vos Épices Authentiques</title>
+    <meta name="description" content="Contactez YAHYA Entreprise pour commander vos épices et miel authentiques du Grand Nord Cameroun. WhatsApp, Telegram, commandes en gros et partenariats disponibles.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fyahyaspic8369back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body class="bg-background font-body">
+    <!-- Navigation Header -->
+    <header class="bg-surface shadow-gentle sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <svg class="w-10 h-10 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                        <path d="M20 2L25 12H35L27 18L30 28L20 22L10 28L13 18L5 12H15L20 2Z"/>
+                        <circle cx="20" cy="30" r="3" fill="currentColor"/>
+                    </svg>
+                    <div>
+                        <h1 class="font-headline text-xl font-bold text-primary">YAHYA</h1>
+                        <p class="text-xs text-text-muted">Spice Enterprise</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-smooth">Accueil</a>
+                    <a href="product_catalog.html" class="text-text-secondary hover:text-primary transition-smooth">Produits</a>
+                    <a href="regional_heritage.html" class="text-text-secondary hover:text-primary transition-smooth">Héritage</a>
+                    <a href="contact.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden mt-4 hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-3 pb-4">
+                    <a href="homepage.html" class="text-text-secondary">Accueil</a>
+                    <a href="product_catalog.html" class="text-text-secondary">Produits</a>
+                    <a href="regional_heritage.html" class="text-text-secondary">Héritage</a>
+                    <a href="contact.html" class="text-primary font-semibold">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-16 bg-gradient-warm text-white overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" fill="currentColor">
+                <pattern id="contact-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                    <circle cx="10" cy="10" r="2" fill="currentColor"/>
+                </pattern>
+                <rect width="100" height="100" fill="url(#contact-pattern)"/>
+            </svg>
+        </div>
+
+        <div class="relative container mx-auto px-4 text-center">
+            <h1 class="font-headline text-4xl md:text-5xl font-bold mb-6">
+                Contactez-nous
+            </h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">
+                Prêt à découvrir les saveurs authentiques du Grand Nord Cameroun ? 
+                Contactez-nous dès maintenant pour vos commandes personnalisées.
+            </p>
+            
+            <!-- Quick Contact Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://wa.me/237123456789?text=Bonjour%20YAHYA%20Entreprise,%20je%20souhaite%20passer%20une%20commande" 
+                   target="_blank" 
+                   class="bg-green-500 text-white px-8 py-4 rounded-lg font-cta font-semibold hover:bg-green-600 transition-smooth flex items-center gap-2 shadow-warm">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+                    </svg>
+                    WhatsApp Direct
+                </a>
+                <a href="https://t.me/yahyaspice" 
+                   target="_blank" 
+                   class="bg-blue-500 text-white px-8 py-4 rounded-lg font-cta font-semibold hover:bg-blue-600 transition-smooth flex items-center gap-2 shadow-warm">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                    </svg>
+                    Telegram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods Section -->
+    <section class="py-16 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-headline text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Plusieurs Façons de Nous Contacter
+                </h2>
+                <p class="text-text-secondary text-lg max-w-2xl mx-auto">
+                    Choisissez le canal de communication qui vous convient le mieux. 
+                    Nous sommes là pour vous accompagner dans votre commande.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- WhatsApp Contact -->
+                <div class="card text-center group hover:shadow-warm transition-all duration-300">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-200 transition-smooth">
+                        <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline text-xl font-semibold text-text-primary mb-3">WhatsApp Business</h3>
+                    <p class="text-text-muted mb-4">
+                        Commandes rapides, conseils personnalisés et suivi en temps réel
+                    </p>
+                    <p class="text-primary font-semibold mb-4">+237 123 456 789</p>
+                    <a href="https://wa.me/237123456789?text=Bonjour%20YAHYA%20Entreprise" 
+                       target="_blank" 
+                       class="btn-primary w-full">
+                        Ouvrir WhatsApp
+                    </a>
+                </div>
+
+                <!-- Telegram Contact -->
+                <div class="card text-center group hover:shadow-warm transition-all duration-300">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-smooth">
+                        <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline text-xl font-semibold text-text-primary mb-3">Canal Telegram</h3>
+                    <p class="text-text-muted mb-4">
+                        Rejoignez notre communauté pour les offres exclusives et nouveautés
+                    </p>
+                    <p class="text-primary font-semibold mb-4">@yahyaspice</p>
+                    <a href="https://t.me/yahyaspice" 
+                       target="_blank" 
+                       class="btn-secondary w-full">
+                        Rejoindre Telegram
+                    </a>
+                </div>
+
+                <!-- Email Contact -->
+                <div class="card text-center group hover:shadow-warm transition-all duration-300">
+                    <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary-200 transition-smooth">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline text-xl font-semibold text-text-primary mb-3">Email Professionnel</h3>
+                    <p class="text-text-muted mb-4">
+                        Pour les demandes détaillées et partenariats commerciaux
+                    </p>
+                    <p class="text-primary font-semibold mb-4">contact@yahyaspice.cm</p>
+                    <a href="mailto:contact@yahyaspice.cm?subject=Demande%20d'information%20YAHYA%20Spice" 
+                       class="btn-accent w-full">
+                        Envoyer un Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-16 bg-surface">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="font-headline text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                        Formulaire de Contact
+                    </h2>
+                    <p class="text-text-secondary text-lg">
+                        Remplissez ce formulaire pour une réponse personnalisée à votre demande
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Contact Form -->
+                    <div class="card">
+                        <form id="contact-form" class="space-y-6">
+                            <!-- Personal Information -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="firstName" class="block text-sm font-semibold text-text-primary mb-2">
+                                        Prénom *
+                                    </label>
+                                    <input type="text" id="firstName" name="firstName" required 
+                                           class="input-field" placeholder="Votre prénom">
+                                </div>
+                                <div>
+                                    <label for="lastName" class="block text-sm font-semibold text-text-primary mb-2">
+                                        Nom *
+                                    </label>
+                                    <input type="text" id="lastName" name="lastName" required 
+                                           class="input-field" placeholder="Votre nom">
+                                </div>
+                            </div>
+
+                            <!-- Contact Details -->
+                            <div>
+                                <label for="email" class="block text-sm font-semibold text-text-primary mb-2">
+                                    Email *
+                                </label>
+                                <input type="email" id="email" name="email" required 
+                                       class="input-field" placeholder="votre.email@exemple.com">
+                            </div>
+
+                            <div>
+                                <label for="phone" class="block text-sm font-semibold text-text-primary mb-2">
+                                    Téléphone
+                                </label>
+                                <input type="tel" id="phone" name="phone" 
+                                       class="input-field" placeholder="+237 XXX XXX XXX">
+                            </div>
+
+                            <!-- Inquiry Type -->
+                            <div>
+                                <label for="inquiryType" class="block text-sm font-semibold text-text-primary mb-2">
+                                    Type de Demande *
+                                </label>
+                                <select id="inquiryType" name="inquiryType" required class="input-field">
+                                    <option value="">Sélectionnez le type de demande</option>
+                                    <option value="individual">Commande Individuelle</option>
+                                    <option value="bulk">Achat en Gros</option>
+                                    <option value="partnership">Partenariat Commercial</option>
+                                    <option value="sample">Échantillons Gratuits</option>
+                                    <option value="information">Demande d'Information</option>
+                                    <option value="callback">Demande de Rappel</option>
+                                </select>
+                            </div>
+
+                            <!-- Language Preference -->
+                            <div>
+                                <label for="language" class="block text-sm font-semibold text-text-primary mb-2">
+                                    Langue Préférée
+                                </label>
+                                <select id="language" name="language" class="input-field">
+                                    <option value="fr">Français</option>
+                                    <option value="en">English</option>
+                                </select>
+                            </div>
+
+                            <!-- Message -->
+                            <div>
+                                <label for="message" class="block text-sm font-semibold text-text-primary mb-2">
+                                    Message *
+                                </label>
+                                <textarea id="message" name="message" rows="5" required 
+                                          class="input-field resize-none" 
+                                          placeholder="Décrivez votre demande en détail..."></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn-primary w-full text-lg py-4">
+                                Envoyer la Demande
+                            </button>
+
+                            <!-- Alternative Contact -->
+                            <div class="text-center pt-4 border-t border-border">
+                                <p class="text-text-muted text-sm mb-3">Ou contactez-nous directement :</p>
+                                <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                                    <a href="https://wa.me/237123456789?text=Demande%20via%20formulaire%20contact" 
+                                       target="_blank" 
+                                       class="text-green-600 hover:text-green-700 font-semibold flex items-center justify-center gap-2">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+                                        </svg>
+                                        WhatsApp
+                                    </a>
+                                    <a href="https://t.me/yahyaspice" 
+                                       target="_blank" 
+                                       class="text-blue-600 hover:text-blue-700 font-semibold flex items-center justify-center gap-2">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                                        </svg>
+                                        Telegram
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Business Information -->
+                    <div class="space-y-8">
+                        <!-- Business Hours -->
+                        <div class="card">
+                            <h3 class="font-headline text-xl font-semibold text-text-primary mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                                </svg>
+                                Heures d'Ouverture
+                            </h3>
+                            <div class="space-y-2 text-text-secondary">
+                                <div class="flex justify-between">
+                                    <span>Lundi - Vendredi</span>
+                                    <span class="font-semibold">8h00 - 18h00 (GMT+1)</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Samedi</span>
+                                    <span class="font-semibold">9h00 - 15h00 (GMT+1)</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Dimanche</span>
+                                    <span class="font-semibold text-text-muted">Fermé</span>
+                                </div>
+                            </div>
+                            <div class="mt-4 p-3 bg-accent-50 rounded-lg">
+                                <p class="text-sm text-text-secondary">
+                                    <strong>Note :</strong> WhatsApp et Telegram sont disponibles 24h/7j pour les commandes urgentes.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Business Address -->
+                        <div class="card">
+                            <h3 class="font-headline text-xl font-semibold text-text-primary mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                                </svg>
+                                Adresse Commerciale
+                            </h3>
+                            <div class="text-text-secondary space-y-2">
+                                <p class="font-semibold">YAHYA Spice Enterprise</p>
+                                <p>Quartier Commercial Central</p>
+                                <p>Maroua, Région de l'Extrême-Nord</p>
+                                <p>République du Cameroun</p>
+                            </div>
+                            <div class="mt-4 p-3 bg-primary-50 rounded-lg">
+                                <p class="text-sm text-text-secondary">
+                                    <strong>Enregistrement :</strong> RC/MRA/2023/B/1234 - Registre du Commerce de Maroua
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Quick Response Promise -->
+                        <div class="card bg-gradient-warm text-white">
+                            <h3 class="font-headline text-xl font-semibold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                Notre Engagement
+                            </h3>
+                            <ul class="space-y-2 text-sm opacity-90">
+                                <li>• Réponse sous 2h via WhatsApp/Telegram</li>
+                                <li>• Réponse email sous 24h</li>
+                                <li>• Devis personnalisé gratuit</li>
+                                <li>• Échantillons disponibles</li>
+                                <li>• Support multilingue (FR/EN)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="font-headline text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                        Questions Fréquentes
+                    </h2>
+                    <p class="text-text-secondary text-lg">
+                        Trouvez rapidement les réponses à vos questions les plus courantes
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- FAQ Item 1 -->
+                    <div class="card">
+                        <button class="faq-toggle w-full text-left flex items-center justify-between p-2" data-target="faq-1">
+                            <h3 class="font-semibold text-text-primary">Comment passer une commande ?</h3>
+                            <svg class="w-5 h-5 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="faq-1" class="faq-content hidden pt-4 text-text-secondary">
+                            <p>Vous pouvez passer commande de trois façons simples :</p>
+                            <ul class="list-disc list-inside mt-2 space-y-1">
+                                <li><strong>WhatsApp :</strong> Contactez-nous au +237 123 456 789 pour une commande rapide</li>
+                                <li><strong>Telegram :</strong> Rejoignez @yahyaspice pour commander via notre canal</li>
+                                <li><strong>Formulaire :</strong> Remplissez le formulaire ci-dessus pour une demande détaillée</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="card">
+                        <button class="faq-toggle w-full text-left flex items-center justify-between p-2" data-target="faq-2">
+                            <h3 class="font-semibold text-text-primary">Quels sont vos délais de livraison ?</h3>
+                            <svg class="w-5 h-5 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="faq-2" class="faq-content hidden pt-4 text-text-secondary">
+                            <ul class="space-y-2">
+                                <li><strong>Cameroun :</strong> 2-5 jours ouvrables selon la région</li>
+                                <li><strong>Afrique Centrale :</strong> 7-14 jours ouvrables</li>
+                                <li><strong>Europe/Amérique :</strong> 10-21 jours ouvrables</li>
+                                <li><strong>Commandes urgentes :</strong> Express disponible via WhatsApp</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="card">
+                        <button class="faq-toggle w-full text-left flex items-center justify-between p-2" data-target="faq-3">
+                            <h3 class="font-semibold text-text-primary">Proposez-vous des échantillons gratuits ?</h3>
+                            <svg class="w-5 h-5 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="faq-3" class="faq-content hidden pt-4 text-text-secondary">
+                            <p>Oui ! Nous proposons des échantillons gratuits pour :</p>
+                            <ul class="list-disc list-inside mt-2 space-y-1">
+                                <li>Les nouveaux clients (frais de port à votre charge)</li>
+                                <li>Les commandes en gros (échantillons inclus)</li>
+                                <li>Les partenariats commerciaux (pack découverte gratuit)</li>
+                            </ul>
+                            <p class="mt-2">Contactez-nous via WhatsApp pour demander vos échantillons.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="card">
+                        <button class="faq-toggle w-full text-left flex items-center justify-between p-2" data-target="faq-4">
+                            <h3 class="font-semibold text-text-primary">Quels sont vos modes de paiement ?</h3>
+                            <svg class="w-5 h-5 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="faq-4" class="faq-content hidden pt-4 text-text-secondary">
+                            <ul class="space-y-2">
+                                <li><strong>Mobile Money :</strong> Orange Money, MTN MoMo (Cameroun)</li>
+                                <li><strong>Virement bancaire :</strong> Comptes locaux et internationaux</li>
+                                <li><strong>Western Union :</strong> Pour les clients internationaux</li>
+                                <li><strong>Paiement à la livraison :</strong> Disponible à Maroua et environs</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="card">
+                        <button class="faq-toggle w-full text-left flex items-center justify-between p-2" data-target="faq-5">
+                            <h3 class="font-semibold text-text-primary">Comment garantissez-vous la qualité de vos produits ?</h3>
+                            <svg class="w-5 h-5 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="faq-5" class="faq-content hidden pt-4 text-text-secondary">
+                            <p>Notre engagement qualité repose sur :</p>
+                            <ul class="list-disc list-inside mt-2 space-y-1">
+                                <li>Partenariats directs avec les agriculteurs locaux</li>
+                                <li>Contrôle qualité à chaque étape de production</li>
+                                <li>Séchage et conservation selon méthodes traditionnelles</li>
+                                <li>Emballage hermétique pour préserver la fraîcheur</li>
+                                <li>Garantie satisfaction ou remboursement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <svg class="w-8 h-8 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                            <path d="M20 2L25 12H35L27 18L30 28L20 22L10 28L13 18L5 12H15L20 2Z"/>
+                            <circle cx="20" cy="30" r="3" fill="currentColor"/>
+                        </svg>
+                        <div>
+                            <h3 class="font-headline text-lg font-bold text-primary">YAHYA</h3>
+                            <p class="text-xs text-gray-400">Spice Enterprise</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">
+                        Préservons ensemble l'héritage culinaire du Grand Nord Cameroun 
+                        à travers des épices et du miel authentiques.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://wa.me/237123456789" target="_blank" class="text-gray-400 hover:text-primary transition-smooth">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+                            </svg>
+                        </a>
+                        <a href="https://t.me/yahyaspice" target="_blank" class="text-gray-400 hover:text-primary transition-smooth">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="homepage.html" class="text-gray-300 hover:text-primary transition-smooth">Accueil</a></li>
+                        <li><a href="product_catalog.html" class="text-gray-300 hover:text-primary transition-smooth">Nos Produits</a></li>
+                        <li><a href="regional_heritage.html" class="text-gray-300 hover:text-primary transition-smooth">Notre Héritage</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-primary transition-smooth">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Nos Produits</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="product_catalog.html" class="text-gray-300 hover:text-primary transition-smooth">Piments Séchés</a></li>
+                        <li><a href="product_catalog.html" class="text-gray-300 hover:text-primary transition-smooth">Curcuma Bio</a></li>
+                        <li><a href="product_catalog.html" class="text-gray-300 hover:text-primary transition-smooth">Miel Traditionnel</a></li>
+                        <li><a href="product_catalog.html" class="text-gray-300 hover:text-primary transition-smooth">Mélanges d'Épices</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Contact</h4>
+                    <div class="space-y-2 text-sm text-gray-300">
+                        <p class="flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            contact@yahyaspice.cm
+                        </p>
+                        <p class="flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                            +237 123 456 789
+                        </p>
+                        <p class="flex items-start gap-2">
+                            <svg class="w-4 h-4 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                            Grand Nord Cameroun
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400 text-sm">
+                    © 2025 YAHYA Spice Enterprise. Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/237123456789?text=Bonjour%20YAHYA%20Entreprise" 
+           target="_blank" 
+           class="bg-green-500 text-white p-4 rounded-full shadow-warm hover:bg-green-600 transition-smooth animate-gentle-bounce">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+            </svg>
+        </a>
+
+        <!-- Telegram Button -->
+        <a href="https://t.me/yahyaspice" 
+           target="_blank" 
+           class="bg-blue-500 text-white p-4 rounded-full shadow-warm hover:bg-blue-600 transition-smooth">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+            </svg>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Create WhatsApp message
+            const message = `Nouvelle demande de contact:
+            
+Nom: ${data.firstName} ${data.lastName}
+Email: ${data.email}
+Téléphone: ${data.phone || 'Non renseigné'}
+Type de demande: ${data.inquiryType}
+Langue préférée: ${data.language}
+
+Message:
+${data.message}`;
+            
+            // Redirect to WhatsApp
+            const whatsappUrl = `https://wa.me/237123456789?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+            
+            // Show success message
+            alert('Votre demande a été préparée pour WhatsApp. Cliquez sur "Envoyer" dans WhatsApp pour finaliser votre demande.');
+        });
+
+        // FAQ Toggle functionality
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                const content = document.getElementById(targetId);
+                const icon = this.querySelector('svg');
+                
+                // Toggle content visibility
+                content.classList.toggle('hidden');
+                
+                // Rotate icon
+                if (content.classList.contains('hidden')) {
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation classes on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and sections
+        document.querySelectorAll('.card, section').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

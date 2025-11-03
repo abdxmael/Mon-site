@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piment Rouge Séché - YAHYA Spice Enterprise</title>
+    <meta name="description" content="Découvrez notre piment rouge séché authentique du Grand Nord Cameroun. Cultivé selon les méthodes traditionnelles, parfait pour vos plats authentiques.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fyahyaspic8369back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body class="bg-background font-body">
+    <!-- Navigation Header -->
+    <header class="bg-surface shadow-gentle sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <svg class="w-10 h-10 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                        <path d="M20 2L25 12H35L27 18L30 28L20 22L10 28L13 18L5 12H15L20 2Z"/>
+                        <circle cx="20" cy="30" r="3" fill="currentColor"/>
+                    </svg>
+                    <div>
+                        <h1 class="font-headline text-xl font-bold text-primary">YAHYA</h1>
+                        <p class="text-xs text-text-muted">Spice Enterprise</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-smooth">Accueil</a>
+                    <a href="product_catalog.html" class="text-text-secondary hover:text-primary transition-smooth">Produits</a>
+                    <a href="regional_heritage.html" class="text-text-secondary hover:text-primary transition-smooth">Héritage</a>
+                    <a href="contact.html" class="text-text-secondary hover:text-primary transition-smooth">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden mt-4 hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-3 pb-4">
+                    <a href="homepage.html" class="text-text-secondary">Accueil</a>
+                    <a href="product_catalog.html" class="text-text-secondary">Produits</a>
+                    <a href="regional_heritage.html" class="text-text-secondary">Héritage</a>
+                    <a href="contact.html" class="text-text-secondary">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <section class="bg-surface py-4">
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center space-x-2 text-sm text-text-muted">
+                <a href="homepage.html" class="hover:text-primary transition-smooth">Accueil</a>
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <a href="product_catalog.html" class="hover:text-primary transition-smooth">Produits</a>
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-text-primary font-medium">Piment Rouge Séché</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Product Detail Section -->
+    <section class="py-12 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Product Images -->
+                <div class="space-y-4">
+                    <!-- Main Product Image -->
+                    <div class="relative overflow-hidden rounded-2xl bg-surface">
+                        <img src="https://images.unsplash.com/photo-1623038038174-4a4c40690b59" 
+                             alt="Piments rouges séchés traditionnels du Grand Nord Cameroun disposés artistiquement sur une surface en bois" 
+                             class="w-full h-96 object-cover"
+                             id="main-product-image"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        
+                        <!-- 360° View Badge -->
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+                            <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"/>
+                            </svg>
+                            Vue 360°
+                        </div>
+
+                        <!-- Quality Badge -->
+                        <div class="absolute top-4 right-4 bg-success text-white px-3 py-1 rounded-full text-xs font-semibold">
+                            Qualité Premium
+                        </div>
+                    </div>
+
+                    <!-- Thumbnail Images -->
+                    <div class="grid grid-cols-4 gap-3">
+                        <button class="thumbnail-btn active overflow-hidden rounded-lg border-2 border-primary" data-image="https://images.pixabay.com/photo/2016/07/21/11/17/chili-1532340_1280.jpg">
+                            <img src="https://images.unsplash.com/photo-1605358358726-3a57dcae6253" 
+                                 alt="Vue principale des piments rouges séchés YAHYA" 
+                                 class="w-full h-20 object-cover"
+                                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        </button>
+                        <button class="thumbnail-btn overflow-hidden rounded-lg border-2 border-border hover:border-primary transition-smooth" data-image="https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg">
+                            <img src="https://images.unsplash.com/photo-1672700430183-4c9edd920c7b" 
+                                 alt="Piments séchés dans leur environnement naturel au Cameroun" 
+                                 class="w-full h-20 object-cover"
+                                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        </button>
+                        <button class="thumbnail-btn overflow-hidden rounded-lg border-2 border-border hover:border-primary transition-smooth" data-image="https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8">
+                            <img src="https://images.unsplash.com/photo-1685592539760-66dc5717729d" 
+                                 alt="Processus de séchage traditionnel des piments au soleil" 
+                                 class="w-full h-20 object-cover"
+                                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        </button>
+                        <button class="thumbnail-btn overflow-hidden rounded-lg border-2 border-border hover:border-primary transition-smooth" data-image="https://images.pixabay.com/photo/2017/05/26/20/06/spice-2347046_1280.jpg">
+                            <img src="https://images.unsplash.com/photo-1589214416088-8837ebda068a" 
+                                 alt="Piments broyés en poudre fine prêts à l'utilisation" 
+                                 class="w-full h-20 object-cover"
+                                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Information -->
+                <div class="space-y-6">
+                    <!-- Product Title & Rating -->
+                    <div>
+                        <h1 class="font-headline text-3xl md:text-4xl font-bold text-text-primary mb-2">
+                            Piment Rouge Séché Traditionnel
+                        </h1>
+                        <p class="text-text-muted mb-4">Origine: Grand Nord Cameroun</p>
+                        
+                        <!-- Rating & Reviews -->
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="flex items-center">
+                                <div class="flex">
+                                    <svg class="w-5 h-5 text-accent fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-accent fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-accent fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-accent fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-accent fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                </div>
+                                <span class="ml-2 text-text-secondary font-semibold">4.9</span>
+                            </div>
+                            <span class="text-text-muted">(127 avis)</span>
+                            <button class="text-primary hover:text-primary-700 transition-smooth flex items-center gap-1">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                                Ajouter aux favoris
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Heat Level Guide -->
+                    <div class="card">
+                        <h3 class="font-headline text-lg font-semibold text-text-primary mb-3">Niveau de Piquant</h3>
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="flex">
+                                <div class="w-4 h-4 bg-error rounded-full"></div>
+                                <div class="w-4 h-4 bg-error rounded-full ml-1"></div>
+                                <div class="w-4 h-4 bg-error rounded-full ml-1"></div>
+                                <div class="w-4 h-4 bg-error rounded-full ml-1"></div>
+                                <div class="w-4 h-4 bg-border rounded-full ml-1"></div>
+                            </div>
+                            <span class="text-text-secondary font-semibold">Très Piquant (4/5)</span>
+                        </div>
+                        <p class="text-text-muted text-sm">Parfait pour les amateurs de sensations fortes. Idéal pour les plats traditionnels camerounais.</p>
+                    </div>
+
+                    <!-- Price & Purchase -->
+                    <div class="card">
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-3xl font-bold text-primary">2,500 FCFA</span>
+                                <span class="text-text-muted ml-2">/ 250g</span>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm text-success font-semibold">En stock</p>
+                                <p class="text-xs text-text-muted">Livraison sous 2-3 jours</p>
+                            </div>
+                        </div>
+
+                        <!-- Quantity Selector -->
+                        <div class="flex items-center gap-4 mb-6">
+                            <label class="text-text-secondary font-semibold">Quantité:</label>
+                            <div class="flex items-center border border-border rounded-lg">
+                                <button class="px-3 py-2 hover:bg-surface transition-smooth" id="decrease-qty">-</button>
+                                <input type="number" value="1" min="1" class="w-16 text-center border-none bg-transparent focus:outline-none" id="quantity-input">
+                                <button class="px-3 py-2 hover:bg-surface transition-smooth" id="increase-qty">+</button>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a href="https://wa.me/237123456789?text=Je%20suis%20intéressé%20par%20le%20Piment%20Rouge%20Séché%20-%202,500%20FCFA" 
+                               target="_blank" 
+                               class="btn-primary flex-1 flex items-center justify-center gap-2">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+                                </svg>
+                                Commander via WhatsApp
+                            </a>
+                            <a href="https://t.me/yahyaspice" 
+                               target="_blank" 
+                               class="btn-accent flex items-center justify-center gap-2">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                                </svg>
+                                Telegram
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Social Sharing -->
+                    <div class="flex items-center gap-4">
+                        <span class="text-text-secondary font-semibold">Partager:</span>
+                        <div class="flex gap-2">
+                            <button class="p-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-smooth" onclick="shareWhatsApp()">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+                                </svg>
+                            </button>
+                            <button class="p-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition-smooth" onclick="shareInstagram()">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Tabs -->
+    <section class="py-12 bg-surface">
+        <div class="container mx-auto px-4">
+            <!-- Tab Navigation -->
+            <div class="flex flex-wrap border-b border-border mb-8">
+                <button class="tab-btn active px-6 py-3 font-semibold text-primary border-b-2 border-primary" data-tab="description">
+                    Description
+                </button>
+                <button class="tab-btn px-6 py-3 font-semibold text-text-muted hover:text-primary transition-smooth" data-tab="origin">
+                    Histoire & Origine
+                </button>
+                <button class="tab-btn px-6 py-3 font-semibold text-text-muted hover:text-primary transition-smooth" data-tab="nutrition">
+                    Nutrition & Bienfaits
+                </button>
+                <button class="tab-btn px-6 py-3 font-semibold text-text-muted hover:text-primary transition-smooth" data-tab="usage">
+                    Utilisation & Conservation
+                </button>
+                <button class="tab-btn px-6 py-3 font-semibold text-text-muted hover:text-primary transition-smooth" data-tab="quality">
+                    Qualité & Sourcing
+                </button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Description Tab -->
+                <div id="description" class="tab-panel active">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="font-headline text-2xl font-semibold text-text-primary mb-4">
+                                Piment Rouge Séché Authentique
+                            </h3>
+                            <p class="text-text-secondary mb-4 leading-relaxed">
+                                Nos piments rouges séchés proviennent directement des terres fertiles du Grand Nord Cameroun, 
+                                où ils sont cultivés selon les méthodes ancestrales transmises de génération en génération. 
+                                Séchés naturellement au soleil du Sahel, ils conservent toute leur saveur intense et leurs propriétés nutritionnelles.
+                            </p>
+                            <p class="text-text-secondary mb-6 leading-relaxed">
+                                Parfaits pour rehausser vos plats traditionnels camerounais, ces piments apportent une chaleur 
+                                authentique et des arômes complexes qui réveilleront vos papilles et vous reconnecteront à vos racines culinaires.
+                            </p>
+                            
+                            <!-- Serving Size -->
+                            <div class="card">
+                                <h4 class="font-semibold text-text-primary mb-3">Portion Suggérée</h4>
+                                <div class="grid grid-cols-2 gap-4 text-sm">
+                                    <div>
+                                        <span class="text-text-muted">Pour 4 personnes:</span>
+                                        <p class="font-semibold text-text-primary">1-2 cuillères à café</p>
+                                    </div>
+                                    <div>
+                                        <span class="text-text-muted">Plat familial:</span>
+                                        <p class="font-semibold text-text-primary">1 cuillère à soupe</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1720420866056-07fe15991f16" 
+                                 alt="Champs de piments dans le paysage traditionnel du Grand Nord Cameroun" 
+                                 class="w-full h-64 object-cover rounded-xl"
+                                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Origin Tab -->
+                <div id="origin" class="tab-panel hidden">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="font-headline text-2xl font-semibold text-text-primary mb-4">
+                                L'Histoire de Nos Piments
+                            </h3>
+                            <p class="text-text-secondary mb-4 leading-relaxed">
+                                Dans les villages du Grand Nord Cameroun, la culture du piment rouge est un art ancestral. 
+                                Nos partenaires agriculteurs, héritiers de cette tradition millénaire, cultivent ces piments 
+                                sur des terres enrichies par des générations de savoir-faire traditionnel.
+                            </p>
+                            <p class="text-text-secondary mb-6 leading-relaxed">
+                                Le processus de séchage au soleil, pratiqué depuis des siècles, permet de concentrer 
+                                les saveurs tout en préservant les propriétés nutritionnelles. Chaque piment raconte 
+                                l'histoire de sa terre d'origine et du savoir-faire de nos producteurs locaux.
+                            </p>
+
+                            <!-- Farmer Partnership -->
+                            <div class="card">
+                                <h4 class="font-semibold text-text-primary mb-3">Notre Partenaire Producteur</h4>
+                                <div class="flex items-center gap-4">
+                                    <img src="https://images.unsplash.com/photo-1708417143764-efed05675811" 
+                                         alt="Portrait d'Amadou Bello, agriculteur partenaire cultivant les piments YAHYA" 
+                                         class="w-16 h-16 rounded-full object-cover"
+                                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                                    <div>
+                                        <p class="font-semibold text-text-primary">Amadou Bello</p>
+                                        <p class="text-sm text-text-muted">Agriculteur traditionnel - Maroua</p>
+                                        <p class="text-sm text-text-secondary">25 ans d'expérience</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1577453399664-1f3325ca7771" 
+                                 alt="Agriculteur traditionnel du Cameroun dans ses champs de piments au coucher du soleil" 
+                                 class="w-full h-64 object-cover rounded-xl mb-4"
+                                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                            <p class="text-sm text-text-muted italic text-center">
+                                Amadou dans ses champs de piments au coucher du soleil
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nutrition Tab -->
+                <div id="nutrition" class="tab-panel hidden">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="font-headline text-2xl font-semibold text-text-primary mb-4">
+                                Valeurs Nutritionnelles
+                            </h3>
+                            
+                            <!-- Nutritional Information Panel -->
+                            <div class="card mb-6">
+                                <h4 class="font-semibold text-text-primary mb-4">Pour 100g de produit</h4>
+                                <div class="grid grid-cols-2 gap-4 text-sm">
+                                    <div class="flex justify-between border-b border-border pb-2">
+                                        <span class="text-text-muted">Énergie</span>
+                                        <span class="font-semibold">324 kcal</span>
+                                    </div>
+                                    <div class="flex justify-between border-b border-border pb-2">
+                                        <span class="text-text-muted">Protéines</span>
+                                        <span class="font-semibold">12.0g</span>
+                                    </div>
+                                    <div class="flex justify-between border-b border-border pb-2">
+                                        <span class="text-text-muted">Glucides</span>
+                                        <span class="font-semibold">56.6g</span>
+                                    </div>
+                                    <div class="flex justify-between border-b border-border pb-2">
+                                        <span class="text-text-muted">Lipides</span>
+                                        <span class="font-semibold">6.8g</span>
+                                    </div>
+                                    <div class="flex justify-between border-b border-border pb-2">
+                                        <span class="text-text-muted">Fibres</span>
+                                        <span class="font-semibold">28.7g</span>
+                                    </div>
+                                    <div class="flex justify-between border-b border-border pb-2">
+                                        <span class="text-text-muted">Vitamine C</span>
+                                        <span class="font-semibold">190mg</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Health Benefits -->
+                            <h4 class="font-semibold text-text-primary mb-3">Bienfaits pour la Santé</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-3">
+                                    <div class="w-2 h-2 bg-success rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-text-secondary">
+                                        <strong>Riche en Capsaïcine:</strong> Propriétés anti-inflammatoires et analgésiques naturelles
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-2 h-2 bg-success rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-text-secondary">
+                                        <strong>Vitamine C:</strong> Renforce le système immunitaire et favorise l'absorption du fer
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-2 h-2 bg-success rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-text-secondary">
+                                        <strong>Antioxydants:</strong> Protection contre les radicaux libres et le vieillissement cellulaire
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-2 h-2 bg-success rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-text-secondary">
+                                        <strong>Métabolisme:</strong> Stimule la thermogenèse et aide à la digestion
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1614964357820-f4ce5b618552" 
+                                 alt="Piments rouges séchés broyés montrant leur richesse nutritionnelle" 
+                                 class="w-full h-64 object-cover rounded-xl"
+                                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Usage Tab -->
+                <div id="usage" class="tab-panel hidden">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="font-headline text-2xl font-semibold text-text-primary mb-4">
+                                Instructions d'Utilisation
+                            </h3>
+                            
+                            <!-- Usage Instructions -->
+                            <div class="card mb-6">
+                                <h4 class="font-semibold text-text-primary mb-4">Modes de Préparation</h4>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h5 class="font-semibold text-text-secondary mb-2">Piment Entier</h5>
+                                        <p class="text-text-muted text-sm">
+                                            Ajoutez directement dans vos ragoûts et soupes. Retirez avant de servir pour une saveur douce.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-semibold text-text-secondary mb-2">Piment Broyé</h5>
+                                        <p class="text-text-muted text-sm">
+                                            Broyez selon vos besoins pour assaisonnements, marinades et sauces piquantes.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-semibold text-text-secondary mb-2">Infusion d'Huile</h5>
+                                        <p class="text-text-muted text-sm">
+                                            Faites infuser dans l'huile chaude pour créer une huile pimentée savoureuse.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Storage Methods -->
+                            <h4 class="font-semibold text-text-primary mb-3">Conservation</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <p class="text-text-secondary">
+                                        <strong>Lieu sec et frais:</strong> Conservez dans un endroit à l'abri de l'humidité et de la lumière directe
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <p class="text-text-secondary">
+                                        <strong>Contenants hermétiques:</strong> Utilisez des bocaux en verre ou des boîtes étanches
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <p class="text-text-secondary">
+                                        <strong>Durée de conservation:</strong> 18-24 mois dans de bonnes conditions de stockage
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1564934956228-e50e8f3e387e" 
+                                 alt="Processus traditionnel de séchage des piments au soleil du Cameroun" 
+                                 class="w-full h-64 object-cover rounded-xl"
+                                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quality Tab -->
+                <div id="quality" class="tab-panel hidden">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="font-headline text-2xl font-semibold text-text-primary mb-4">
+                                Garantie Qualité YAHYA
+                            </h3>
+                            
+                            <!-- Quality Certifications -->
+                            <div class="card mb-6">
+                                <h4 class="font-semibold text-text-primary mb-4">Certifications & Standards</h4>
+                                <div class="space-y-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-12 h-12 bg-success rounded-full flex items-center justify-center">
+                                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-text-primary">Agriculture Traditionnelle</p>
+                                            <p class="text-sm text-text-muted">Méthodes ancestrales préservées</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-text-primary">Contrôle Qualité</p>
+                                            <p class="text-sm text-text-muted">Tests de pureté et d'authenticité</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                                            <svg class="w-6 h-6 text-text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-text-primary">Commerce Équitable</p>
+                                            <p class="text-sm text-text-muted">Partenariat direct avec les producteurs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sourcing Process -->
+                            <h4 class="font-semibold text-text-primary mb-3">Processus de Sourcing</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-3">
+                                    <div class="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">1</div>
+                                    <p class="text-text-secondary">
+                                        <strong>Sélection des Producteurs:</strong> Partenariat avec des agriculteurs expérimentés du Grand Nord
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">2</div>
+                                    <p class="text-text-secondary">
+                                        <strong>Récolte Optimale:</strong> Cueillette à maturité parfaite pour une saveur maximale
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">3</div>
+                                    <p class="text-text-secondary">
+                                        <strong>Séchage Traditionnel:</strong> Séchage naturel au soleil selon les méthodes ancestrales
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">4</div>
+                                    <p class="text-text-secondary">
+                                        <strong>Contrôle Qualité:</strong> Vérification rigoureuse avant conditionnement
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1641436459051-8db16ba60ded" 
+                                 alt="Processus de contrôle qualité des piments dans les installations YAHYA" 
+                                 class="w-full h-64 object-cover rounded-xl"
+                                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Integration Section -->
+    <section class="py-12 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-headline text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Recettes avec nos Piments
+                </h2>
+                <p class="text-text-secondary text-lg max-w-2xl mx-auto">
+                    Découvrez comment utiliser nos piments rouges séchés dans vos plats traditionnels et modernes.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Traditional Recipe -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1712771531319-c46d4d11171e" 
+                         alt="Plat traditionnel camerounais préparé avec les piments YAHYA" 
+                         class="w-full h-48 object-cover rounded-lg mb-4"
+                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="bg-primary text-white px-2 py-1 rounded text-xs font-semibold">Traditionnel</span>
+                        <span class="text-text-muted text-sm">30 min</span>
+                    </div>
+                    <h3 class="font-headline text-xl font-semibold text-text-primary mb-2">Sauce Pimentée Traditionnelle</h3>
+                    <p class="text-text-secondary mb-4">
+                        Une sauce authentique du Grand Nord, parfaite pour accompagner vos plats de viande et de poisson.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-text-muted">Par Fatima Moussa</span>
+                        <button class="text-primary hover:text-primary-700 transition-smooth font-semibold text-sm">
+                            Voir la recette →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modern Recipe -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1611001395347-c1cc3397f750" 
+                         alt="Plat moderne fusion utilisant les piments séchés YAHYA" 
+                         class="w-full h-48 object-cover rounded-lg mb-4"
+                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="bg-accent text-text-primary px-2 py-1 rounded text-xs font-semibold">Moderne</span>
+                        <span class="text-text-muted text-sm">45 min</span>
+                    </div>
+                    <h3 class="font-headline text-xl font-semibold text-text-primary mb-2">Huile Pimentée Artisanale</h3>
+                    <p class="text-text-secondary mb-4">
+                        Une huile infusée moderne qui sublime vos pizzas, pâtes et salades avec les saveurs du Cameroun.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-text-muted">Par Chef Ahmed</span>
+                        <button class="text-primary hover:text-primary-700 transition-smooth font-semibold text-sm">
+                            Voir la recette →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="py-12 bg-surface">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-headline text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Avis de nos Clients
+                </h2>
+                <p class="text-text-secondary text-lg max-w-2xl mx-auto">
+                    Découvrez ce que pensent nos clients de nos piments rouges séchés authentiques.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1535924516935-5a22fa7c37b3" 
+                             alt="Portrait de Fatima Moussa, cliente satisfaite ayant acheté les piments YAHYA" 
+                             class="w-12 h-12 rounded-full object-cover mr-4"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-semibold text-text-primary">Fatima Moussa</h4>
+                            <div class="flex">
+                                <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic mb-3">
+                        "Ces piments me rappellent exactement le goût de mon enfance au village. 
+                        La qualité est exceptionnelle et l'authenticité se ressent dans chaque bouchée."
+                    </p>
+                    <div class="flex items-center gap-2">
+                        <img src="https://images.unsplash.com/photo-1729688547717-19aea34b300c" 
+                             alt="Plat préparé par Fatima avec les piments YAHYA" 
+                             class="w-12 h-12 rounded object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <span class="text-xs text-text-muted">Photo de son plat</span>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1715828202780-915fd3571413" 
+                             alt="Portrait d'Ahmed Bakari, chef cuisinier utilisant les piments YAHYA" 
+                             class="w-12 h-12 rounded-full object-cover mr-4"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-semibold text-text-primary">Ahmed Bakari</h4>
+                            <div class="flex">
+                                <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic mb-3">
+                        "En tant que chef, je recherche toujours la meilleure qualité. 
+                        Ces piments apportent une complexité de saveurs incomparable à mes créations."
+                    </p>
+                    <div class="flex items-center gap-2">
+                        <img src="https://images.unsplash.com/photo-1613781022798-89eebc87b706" 
+                             alt="Création culinaire d'Ahmed utilisant les piments YAHYA" 
+                             class="w-12 h-12 rounded object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <span class="text-xs text-text-muted">Sa création</span>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1724491801483-9e812b1eb2b0" 
+                             alt="Portrait de Marie Djibril, cliente régulière des produits YAHYA" 
+                             class="w-12 h-12 rounded-full object-cover mr-4"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-semibold text-text-primary">Marie Djibril</h4>
+                            <div class="flex">
+                                <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-border fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic">
+                        "Livraison rapide et produit conforme à mes attentes. 
+                        Je recommande vivement pour tous ceux qui cherchent l'authenticité."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Q&A Section -->
+    <section class="py-12 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-headline text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Questions Fréquentes
+                </h2>
+                <p class="text-text-secondary text-lg max-w-2xl mx-auto">
+                    Trouvez les réponses aux questions les plus courantes sur nos piments rouges séchés.
+                </p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="card">
+                    <button class="faq-question w-full text-left flex items-center justify-between p-4 hover:bg-surface-100 transition-smooth" data-faq="1">
+                        <h3 class="font-semibold text-text-primary">Comment conserver les piments séchés ?</h3>
+                        <svg class="w-5 h-5 text-text-muted transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-4 pb-4">
+                        <p class="text-text-secondary">
+                            Conservez vos piments dans un endroit sec et frais, à l'abri de la lumière directe. 
+                            Utilisez un contenant hermétique en verre ou en métal. Dans de bonnes conditions, 
+                            ils se conservent 18 à 24 mois en gardant toute leur saveur.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="card">
+                    <button class="faq-question w-full text-left flex items-center justify-between p-4 hover:bg-surface-100 transition-smooth" data-faq="2">
+                        <h3 class="font-semibold text-text-primary">Quelle est l'origine exacte de vos piments ?</h3>
+                        <svg class="w-5 h-5 text-text-muted transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-4 pb-4">
+                        <p class="text-text-secondary">
+                            Nos piments proviennent exclusivement des régions de Maroua et Garoua dans le Grand Nord Cameroun. 
+                            Ils sont cultivés par nos partenaires agriculteurs locaux selon les méthodes traditionnelles 
+                            transmises de génération en génération.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="card">
+                    <button class="faq-question w-full text-left flex items-center justify-between p-4 hover:bg-surface-100 transition-smooth" data-faq="3">
+                        <h3 class="font-semibold text-text-primary">Puis-je commander en gros pour mon restaurant ?</h3>
+                        <svg class="w-5 h-5 text-text-muted transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-4 pb-4">
+                        <p class="text-text-secondary">
+                            Absolument ! Nous proposons des tarifs préférentiels pour les commandes en gros. 
+                            Contactez-nous via WhatsApp ou Telegram pour discuter de vos besoins spécifiques 
+                            et obtenir un devis personnalisé.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="card">
+                    <button class="faq-question w-full text-left flex items-center justify-between p-4 hover:bg-surface-100 transition-smooth" data-faq="4">
+                        <h3 class="font-semibold text-text-primary">Vos piments sont-ils biologiques ?</h3>
+                        <svg class="w-5 h-5 text-text-muted transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-4 pb-4">
+                        <p class="text-text-secondary">
+                            Nos piments sont cultivés selon les méthodes traditionnelles sans pesticides chimiques. 
+                            Bien que nous n'ayons pas encore la certification biologique officielle, 
+                            nos pratiques agricoles respectent les principes de l'agriculture biologique.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products Section -->
+    <section class="py-12 bg-surface">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-headline text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Produits Similaires
+                </h2>
+                <p class="text-text-secondary text-lg max-w-2xl mx-auto">
+                    Découvrez d'autres épices authentiques de notre collection.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Related Product 1 -->
+                <div class="card group hover:shadow-warm transition-all duration-300 cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1612504981900-1173d0011c2e" 
+                             alt="Curcuma bio en poudre dorée YAHYA dans un bol traditionnel" 
+                             class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div class="absolute top-3 right-3 bg-success text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Bio
+                        </div>
+                    </div>
+                    <h3 class="font-headline text-xl font-semibold text-text-primary mb-2">Curcuma Bio</h3>
+                    <p class="text-text-muted mb-4">Curcuma pur cultivé biologiquement, riche en curcumine naturelle.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-primary font-bold text-lg">3,000 FCFA</span>
+                        <button class="text-primary hover:text-primary-700 transition-smooth font-semibold text-sm">
+                            Voir le produit →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Related Product 2 -->
+                <div class="card group hover:shadow-warm transition-all duration-300 cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1709008588996-7fab716e9f1b" 
+                             alt="Miel traditionnel doré YAHYA coulant d'une cuillère en bois" 
+                             class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div class="absolute top-3 right-3 bg-accent text-text-primary px-2 py-1 rounded-full text-xs font-semibold">
+                            Premium
+                        </div>
+                    </div>
+                    <h3 class="font-headline text-xl font-semibold text-text-primary mb-2">Miel Traditionnel</h3>
+                    <p class="text-text-muted mb-4">Miel pur récolté selon les méthodes ancestrales, aux saveurs florales uniques.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-primary font-bold text-lg">4,500 FCFA</span>
+                        <button class="text-primary hover:text-primary-700 transition-smooth font-semibold text-sm">
+                            Voir le produit →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Related Product 3 -->
+                <div class="card group hover:shadow-warm transition-all duration-300 cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1677599082447-6549af4c5454" 
+                             alt="Mélange d'épices traditionnel YAHYA dans des bols en bois" 
+                             class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div class="absolute top-3 right-3 bg-primary text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Nouveau
+                        </div>
+                    </div>
+                    <h3 class="font-headline text-xl font-semibold text-text-primary mb-2">Mélange Traditionnel</h3>
+                    <p class="text-text-muted mb-4">Mélange secret d'épices pour vos plats camerounais authentiques.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-primary font-bold text-lg">3,500 FCFA</span>
+                        <button class="text-primary hover:text-primary-700 transition-smooth font-semibold text-sm">
+                            Voir le produit →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recently Viewed Products -->
+    <section class="py-8 bg-background">
+        <div class="container mx-auto px-4">
+            <h3 class="font-headline text-2xl font-semibold text-text-primary mb-6">Récemment Consultés</h3>
+            <div class="flex gap-4 overflow-x-auto pb-4" id="recently-viewed">
+                <!-- Recently viewed items will be populated by JavaScript -->
+                <div class="flex-shrink-0 w-48 card">
+                    <img src="https://images.unsplash.com/photo-1697593176326-6a466e4c4157" 
+                         alt="Curcuma bio récemment consulté" 
+                         class="w-full h-32 object-cover rounded-lg mb-2"
+                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    <h4 class="font-semibold text-text-primary text-sm mb-1">Curcuma Bio</h4>
+                    <p class="text-primary font-bold text-sm">3,000 FCFA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <svg class="w-8 h-8 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                            <path d="M20 2L25 12H35L27 18L30 28L20 22L10 28L13 18L5 12H15L20 2Z"/>
+                            <circle cx="20" cy="30" r="3" fill="currentColor"/>
+                        </svg>
+                        <div>
+                            <h3 class="font-headline text-lg font-bold text-primary">YAHYA</h3>
+                            <p class="text-xs text-gray-400">Spice Enterprise</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">
+                        Préservons ensemble l'héritage culinaire du Grand Nord Cameroun 
+                        à travers des épices et du miel authentiques.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://wa.me/237123456789" target="_blank" class="text-gray-400 hover:text-primary transition-smooth">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+                            </svg>
+                        </a>
+                        <a href="https://t.me/yahyaspice" target="_blank" class="text-gray-400 hover:text-primary transition-smooth">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="homepage.html" class="text-gray-300 hover:text-primary transition-smooth">Accueil</a></li>
+                        <li><a href="product_catalog.html" class="text-gray-300 hover:text-primary transition-smooth">Nos Produits</a></li>
+                        <li><a href="regional_heritage.html" class="text-gray-300 hover:text-primary transition-smooth">Notre Héritage</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-primary transition-smooth">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Nos Produits</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="product_catalog.html" class="text-gray-300 hover:text-primary transition-smooth">Piments Séchés</a></li>
+                        <li><a href="product_catalog.html" class="text-gray-300 hover:text-primary transition-smooth">Curcuma Bio</a></li>
+                        <li><a href="product_catalog.html" class="text-gray-300 hover:text-primary transition-smooth">Miel Traditionnel</a></li>
+                        <li><a href="product_catalog.html" class="text-gray-300 hover:text-primary transition-smooth">Mélanges d'Épices</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Contact</h4>
+                    <div class="space-y-2 text-sm text-gray-300">
+                        <p class="flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            contact@yahyaspice.cm
+                        </p>
+                        <p class="flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                            +237 123 456 789
+                        </p>
+                        <p class="flex items-start gap-2">
+                            <svg class="w-4 h-4 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                            Grand Nord Cameroun
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400 text-sm">
+                    © 2025 YAHYA Spice Enterprise. Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/237123456789?text=Je%20suis%20intéressé%20par%20le%20Piment%20Rouge%20Séché" 
+           target="_blank" 
+           class="bg-green-500 text-white p-4 rounded-full shadow-warm hover:bg-green-600 transition-smooth animate-gentle-bounce">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+            </svg>
+        </a>
+
+        <!-- Telegram Button -->
+        <a href="https://t.me/yahyaspice" 
+           target="_blank" 
+           class="bg-blue-500 text-white p-4 rounded-full shadow-warm hover:bg-blue-600 transition-smooth">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+            </svg>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Image gallery functionality
+        document.querySelectorAll('.thumbnail-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const newImage = this.dataset.image;
+                const mainImage = document.getElementById('main-product-image');
+                
+                // Update main image
+                mainImage.src = newImage;
+                
+                // Update active thumbnail
+                document.querySelectorAll('.thumbnail-btn').forEach(t => t.classList.remove('active', 'border-primary'));
+                document.querySelectorAll('.thumbnail-btn').forEach(t => t.classList.add('border-border'));
+                this.classList.add('active', 'border-primary');
+                this.classList.remove('border-border');
+            });
+        });
+
+        // Quantity controls
+        document.getElementById('decrease-qty').addEventListener('click', function() {
+            const input = document.getElementById('quantity-input');
+            const currentValue = parseInt(input.value);
+            if (currentValue > 1) {
+                input.value = currentValue - 1;
+            }
+        });
+
+        document.getElementById('increase-qty').addEventListener('click', function() {
+            const input = document.getElementById('quantity-input');
+            const currentValue = parseInt(input.value);
+            input.value = currentValue + 1;
+        });
+
+        // Tab functionality
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const tabId = this.dataset.tab;
+                
+                // Update active tab button
+                document.querySelectorAll('.tab-btn').forEach(t => {
+                    t.classList.remove('active', 'text-primary', 'border-primary');
+                    t.classList.add('text-text-muted');
+                });
+                this.classList.add('active', 'text-primary', 'border-b-2', 'border-primary');
+                this.classList.remove('text-text-muted');
+                
+                // Update active tab panel
+                document.querySelectorAll('.tab-panel').forEach(panel => {
+                    panel.classList.add('hidden');
+                    panel.classList.remove('active');
+                });
+                const activePanel = document.getElementById(tabId);
+                activePanel.classList.remove('hidden');
+                activePanel.classList.add('active');
+            });
+        });
+
+        // FAQ functionality
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const faqId = this.dataset.faq;
+                const answer = this.parentNode.querySelector('.faq-answer');
+                const icon = this.querySelector('svg');
+                
+                // Toggle answer visibility
+                answer.classList.toggle('hidden');
+                
+                // Rotate icon
+                if (answer.classList.contains('hidden')) {
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+
+        // Social sharing functions
+        function shareWhatsApp() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('Découvrez ce piment rouge séché authentique du Cameroun !');
+            window.open(`https://wa.me/?text=${text} ${url}`, '_blank');
+        }
+
+        function shareInstagram() {
+            // Instagram doesn't support direct sharing, so we copy the URL
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                alert('Lien copié ! Vous pouvez maintenant le partager sur Instagram.');
+            });
+        }
+
+        // Recently viewed products tracking
+        function addToRecentlyViewed() {
+            const product = {
+                id: 'piment-rouge-seche',
+                name: 'Piment Rouge Séché',
+                price: '2,500 FCFA',
+                image: 'https://images.pixabay.com/photo/2016/07/21/11/17/chili-1532340_1280.jpg'
+            };
+            
+            let recentlyViewed = JSON.parse(localStorage.getItem('recentlyViewed') || '[]');
+            
+            // Remove if already exists
+            recentlyViewed = recentlyViewed.filter(item => item.id !== product.id);
+            
+            // Add to beginning
+            recentlyViewed.unshift(product);
+            
+            // Keep only last 5 items
+            recentlyViewed = recentlyViewed.slice(0, 5);
+            
+            localStorage.setItem('recentlyViewed', JSON.stringify(recentlyViewed));
+        }
+
+        // Add current product to recently viewed on page load
+        addToRecentlyViewed();
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation classes on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and sections
+        document.querySelectorAll('.card, section').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
